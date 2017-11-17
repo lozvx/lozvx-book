@@ -9,11 +9,7 @@ sudo apt-get update
 * Install packages to allow `apt` to use a repository over HTTPS:
 
 ```
-sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    software-properties-common
+
 ```
 
 * 安装
