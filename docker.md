@@ -1,4 +1,4 @@
-* Install packages to allow `apt` to use a repository over HTTPS:
+* s udo add-apt-repository "deb \[arch=amd64\] https://download.docker.com/linux/ubuntu $\(lsb\_release -cs\) stable"1sudo add-apt-repository "deb \[arch=amd64\] https://download.docker.com/linux/ubuntu $\(lsb\_release -cs\) stable"Install packages to allow `apt` to use a repository over HTTPS:
 
 ```
 sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
