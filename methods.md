@@ -1,17 +1,16 @@
-# Defining Methods
+根据端口号查看进程
 
-Methods allow you to smoothly display code examples in different languages.
+```bash
+netstat –apn | grep 8080
+```
 
-{% method %}
-## My first method
 
-My first method exposes how to print a message in JavaScript and Go.
 
 {% sample lang="js" %}
 Here is how to print a message to `stdout` using JavaScript.
 
 ```js
-console.log('My first method');
+console.l11og('My first method');
 ```
 
 {% sample lang="go" %}
