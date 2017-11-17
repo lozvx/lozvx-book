@@ -44,16 +44,12 @@ awk '!($0 in array) { array[$0]; print}' temp
 awk -F ':' '$3=$4' /etc/passwd
 ```
 
-
-
 ```
 awk '!($0 in array) { array[$0]; print}' tempa
 
 #打印 /etc/password中所有包含同样uid和gid的行
 awk -F ':' '$3=$4' /etc/passwd
 ```
-
-
 
 APT
 
@@ -96,7 +92,6 @@ tar -xjf all.tar.bz2
 
  zip all.zip *.jpg
  unzip all.zip
-
 ```
 
 ```
@@ -109,7 +104,6 @@ whatis ls
 ```
 # 查看linux到网络接口
 ifconfig -a
-
 ```
 
 ```
@@ -123,14 +117,12 @@ chmod g-rwx file.txt
 chmod -R ug+rwx file.txt
 ```
 
- 如果要挂载一个文件系统，需要先创建一个目录，然后将这个文件系统挂载到这个目录上
+如果要挂载一个文件系统，需要先创建一个目录，然后将这个文件系统挂载到这个目录上
 
 ```
 mkdir /u01
 mount /dev/sdb1 /u01
 ```
-
-
 
 ```
 #删除文件前先确认
@@ -143,7 +135,6 @@ rm -r adir
 
 ```
 scp aa@192.168.1.10:/home/text.file ./
-
 ```
 
 

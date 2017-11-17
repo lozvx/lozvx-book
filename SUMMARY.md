@@ -6,6 +6,7 @@
 
 ## Linux
 
+* [科学上网](sql.md)
 * [基本命令](methods.md)
-* [333](333.md)
+* [SQL](333.md)
 
