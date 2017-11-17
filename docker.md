@@ -19,8 +19,6 @@ sudo apt-key fingerprint 0EBFCD88
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com linux/ubuntu $(lsb_release -cs) stable"
 ```
 
-
-
 * 更新源
 
 ```
@@ -30,7 +28,7 @@ sudo apt-get update
 * 安装
 
 ```
- apt-get install docker-ce
+apt-get install docker-ce
 ```
 
 * 启动
