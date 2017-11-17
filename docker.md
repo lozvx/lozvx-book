@@ -1,4 +1,4 @@
-* s udo add-apt-repository "deb \[arch=amd64\] https://download.docker.com/linux/ubuntu $\(lsb\_release -cs\) stable"1sudo add-apt-repository "deb \[arch=amd64\] https://download.docker.com/linux/ubuntu $\(lsb\_release -cs\) stable"Install packages to allow `apt` to use a repository over HTTPS:
+* s udo add-apt-repository "deb \[arch=amd64\] [https://download.docker.com/linux/ubuntu](https://download.docker.com/linux/ubuntu) $\(lsb\_release -cs\) stable"1sudo add-apt-repository "deb \[arch=amd64\] [https://download.docker.com/linux/ubuntu](https://download.docker.com/linux/ubuntu) $\(lsb\_release -cs\) stable"Install packages to allow `apt` to use a repository over HTTPS:
 
 ```
 sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
@@ -16,10 +16,8 @@ sudo apt-key fingerprint 0EBFCD88
 * Add Repo
 
 ```
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com linux/ubuntu $(lsb_release -cs) stable"
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"更新源
 ```
-
-* 更新源
 
 ```
 sudo apt-get update
@@ -28,7 +26,7 @@ sudo apt-get update
 * 安装
 
 ```
-apt-get install docker-ce
+sudo apt-get install docker-ce
 ```
 
 * 启动
