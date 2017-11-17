@@ -3,14 +3,13 @@ Reference:[ https://zouyapeng.gitbooks.io/docker/content/DockerInstallation/ubun
 * 更新源
 
 ```
-sudo apt-get update 
+sudo apt-get update
 ```
 
 * Install packages to allow `apt` to use a repository over HTTPS:
 
 ```
 sudo apt-get install \
- spt-get install \
     apt-transport-https \
     ca-certificates \
     curl \
