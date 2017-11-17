@@ -1,4 +1,25 @@
-sudo apt-get install apt-transport-https ca-certificates curl software-properties-commonReference:[ https://zouyapeng.gitbooks.io/docker/content/DockerInstallation/ubuntu\_16\_04.html](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
+* Install packages to allow `apt` to use a repository over HTTPS:
+
+```
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+```
+
+* Add Docker’s official GPG key:
+
+```
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+# Verify
+sudo apt-key fingerprint 0EBFCD88
+```
+
+* Add Repo
+
+```
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com linux/ubuntu $(lsb_release -cs) stable"
+```
+
+
 
 * 更新源
 
@@ -6,19 +27,13 @@ sudo apt-get install apt-transport-https ca-certificates curl software-propertie
 sudo apt-get update
 ```
 
-* Install packages to allow `apt` to use a repository over HTTPS:
-
-```
-1
-```
-
 * 安装
 
 ```
-sudo apt-get install docker-engine
+ apt-get install docker-ce
 ```
 
-* 启动服务
+* 启动
 
 ```
 sudo service docker start
