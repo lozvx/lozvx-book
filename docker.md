@@ -1,4 +1,4 @@
-Reference:[ https://zouyapeng.gitbooks.io/docker/content/DockerInstallation/ubuntu\_16\_04.html](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-commonReference:[ https://zouyapeng.gitbooks.io/docker/content/DockerInstallation/ubuntu\_16\_04.html](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
 
 * 更新源
 
