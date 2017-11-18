@@ -11,4 +11,5 @@
 * [Docker](docker.md)
 * [SQL](333.md)
 * [Maven](maven.md)
+* [Redis](redis.md)
 
