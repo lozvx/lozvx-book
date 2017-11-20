@@ -3,10 +3,10 @@
 ## Overview
 
 * [介绍](README.md)
-* [Ubuntu](ubuntu.md)
 
 ## Linux
 
+* [Ubuntu](ubuntu.md)
 * [科学上网](sql.md)
 * [基本命令](methods.md)
 * [Docker](docker.md)
