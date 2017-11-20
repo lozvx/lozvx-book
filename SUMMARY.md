@@ -3,6 +3,7 @@
 ## Overview
 
 * [介绍](README.md)
+* [Ubuntu](ubuntu.md)
 
 ## Linux
 
