@@ -16,3 +16,7 @@
 
 ## Basic Java
 
+* [基础知识](ji-chu-zhi-shi.md)
+* [String](string.md)
+* [final](final.md)
+
