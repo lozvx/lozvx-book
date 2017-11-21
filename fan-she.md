@@ -1,4 +1,8 @@
-参考：[/www.jianshu.com/p/6f6bb2f0ece9](/www.jianshu.com/p/6f6bb2f0ece9)
+参考：
+
+[/www.jianshu.com/p/6f6bb2f0ece9](/www.jianshu.com/p/6f6bb2f0ece9)
+
+[https://www.ibm.com/developerworks/cn/java/j-lo-proxy1/](https://www.ibm.com/developerworks/cn/java/j-lo-proxy1/)
 
 * 静态代理：代理类是在编译时就实现好的。也就是说 Java 编译完成后代理类是一个实际的 class 文件。
 
@@ -77,7 +81,6 @@ static Object newProxyInstance(ClassLoader loader,Class<?>[] interfaces,Invocati
 Demo:
 
 ```java
-
 package reflect;
 
 import java.lang.reflect.InvocationHandler;
@@ -130,6 +133,24 @@ public class ProxyTest {
     }
 }
 ```
+
+总结：
+
+动态生成的代理类具有几个特点：
+
+*     继承 Proxy 类，并实现了在Proxy.newProxyInstance\(\)中提供的接口数组。
+
+*     public final。
+
+*     命名方式为 $ProxyN，其中N会慢慢增加，一开始是 $Proxy1，接下来是$Proxy2...
+
+*     有一个参数为 InvocationHandler 的构造函数。这个从 Proxy.newProxyInstance\(\) 函数内部的clazz.getConstructor\(new Class\[\] { InvocationHandler.class }\) 可以看出。
+
+Java 实现动态代理的缺点：因为 Java 的单继承特性（每个代理类都继承了 Proxy 类），只能针对接口创建代理类，不能针对类创建代理类。
+
+
+
+
 
 
 
