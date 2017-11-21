@@ -44,3 +44,67 @@ public enum Size {SMALL,MEDIUM,LAGRE,EXTRA\_LARGE};
 
 [/www.importnew.com/12399.html](/www.importnew.com/12399.html)
 
+
+
+---
+
+内部类
+
+* 内部类方法可以访问该类定义所在到作用域中的数据，包括私有数据。
+* 内部类可以对同一个包中到其他类隐藏起来。
+* 当想要定义一个回调函数且不想编写大量代码时，可以使用匿名（anonymous）内部类实现。
+
+---
+
+回调函数
+
+www.importnew.com/19301.html
+
+https://www.bysocket.com/?p=636
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
