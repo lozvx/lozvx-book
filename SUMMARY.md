@@ -21,4 +21,6 @@
 * [final](final.md)
 * [异常](yi-chang.md)
 * [反射](fan-she.md)
+* [集合](ji-he.md)
+* [多线程](duo-xian-cheng.md)
 
