@@ -38,25 +38,29 @@ class Proxy implements Subject{
 
 首先先说明几个词：
 
-    委托类和委托对象：委托类是一个类，委托对象是委托类的实例。
+```
+委托类和委托对象：委托类是一个类，委托对象是委托类的实例。
 
-    代理类和代理对象：代理类是一个类，代理对象是代理类的实例。
+代理类和代理对象：代理类是一个类，代理对象是代理类的实例。
+```
 
 Java实现动态代理的大致步骤如下：
 
-    定义一个委托类和公共接口。
+```
+定义一个委托类和公共接口。
 
-    自己定义一个类（调用处理器类，即实现 InvocationHandler 接口），这个类的目的是指定运行时将生成的代理类需要完成的具体任务（包括Preprocess和Postprocess），即代理类调用任何方法都会经过这个调用处理器类（在本文最后一节对此进行解释）。
+自己定义一个类（调用处理器类，即实现 InvocationHandler 接口），这个类的目的是指定运行时将生成的代理类需要完成的具体任务（包括Preprocess和Postprocess），即代理类调用任何方法都会经过这个调用处理器类（在本文最后一节对此进行解释）。
 
-    生成代理对象（当然也会生成代理类），需要为他指定\(1\)委托对象\(2\)实现的一系列接口\(3\)调用处理器类的实例。因此可以看出一个代理对象对应一个委托对象，对应一个调用处理器实例。
-
-
+生成代理对象（当然也会生成代理类），需要为他指定\(1\)委托对象\(2\)实现的一系列接口\(3\)调用处理器类的实例。因此可以看出一个代理对象对应一个委托对象，对应一个调用处理器实例。
+```
 
 Java 实现动态代理主要涉及以下几个类：
 
-    java.lang.reflect.Proxy: 这是生成代理类的主类，通过 Proxy 类生成的代理类都继承了 Proxy 类，即 DynamicProxyClass extends Proxy。
+```
+java.lang.reflect.Proxy: 这是生成代理类的主类，通过 Proxy 类生成的代理类都继承了 Proxy 类，即 DynamicProxyClass extends Proxy。
 
-    java.lang.reflect.InvocationHandler: 这里称他为"调用处理器"，他是一个接口，我们动态生成的代理类需要完成的具体内容需要自己定义一个类，而这个类必须实现 InvocationHandler 接口。
+java.lang.reflect.InvocationHandler: 这里称他为"调用处理器"，他是一个接口，我们动态生成的代理类需要完成的具体内容需要自己定义一个类，而这个类必须实现 InvocationHandler 接口。
+```
 
 ```java
 static Object newProxyInstance(ClassLoader loader,Class<?>[] interfaces,InvocationHandler handler)
@@ -70,7 +74,10 @@ static Object newProxyInstance(ClassLoader loader,Class<?>[] interfaces,Invocati
 }
 ```
 
+Demo:
+
 ```java
+
 package reflect;
 
 import java.lang.reflect.InvocationHandler;
