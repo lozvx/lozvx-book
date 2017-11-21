@@ -40,13 +40,9 @@ public class FinalTest {
 
 * 修饰类
 
-用final修饰的类不能被继承
+用final修饰的类不能被继承，如果一个类声明为final，其中的方法自动成为final方法
 
 * 修饰方法
 
 用final修饰的方法不能被重写，但是可以重载多个final修饰到方法
-
-
-
-
 
