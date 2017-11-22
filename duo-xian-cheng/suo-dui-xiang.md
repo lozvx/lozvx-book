@@ -57,5 +57,40 @@ volatile关键字为实例域的同步访问提供你一种免锁机制。如果
 public void flipDone(){done=!done;}// not atomic
 ```
 
+---
+
+ 读写锁：
+
+ReentrantReadWriteLock。如果很多线程从一个数据结构读取数据而很少线程修改其中数据的话，会十分有用。
+
+readLock：得到一个可以被多个读操作公用的读锁，但会排斥所有写操作。
+
+writeLock：得到一个写锁，排斥所有其它的读操作和写操作。
+
+```java
+// 1 构造一个ReentrantReadWriteLock对象
+private ReentrantReadWriteLock rwl = new ReentrantReadWriteLock();
+
+// 2 抽取读锁和写锁
+private Lock readLock = rwl.readLock();
+private Lock writeLock = rwl.writeLock();
+
+// 3 对所有的访问者加读锁
+public double  read()
+{
+readLock.lock();
+try{
+}finally{readLock.unlock();}
+}
+
+// 4 对所有的修改者加写锁
+public void write(double 11)
+{
+writeLock.lock();
+try{
+}finally{writeLock.unlock();}
+}
+```
+
 
 
