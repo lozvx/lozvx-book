@@ -7,13 +7,5 @@ Iterator<E> iterator();
 }
 ```
 
-
-
-![](/assets/CollectionVsCollections.jpeg)![](/assets/java-collection-hierarchy.jpeg)
-
-
-
-
-
-
+所有map都是实现你Map接口，而不是Collection接口。![](/assets/CollectionVsCollections.jpeg)![](/assets/java-collection-hierarchy.jpeg)
 
