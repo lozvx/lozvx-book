@@ -94,8 +94,6 @@ try{
 
 生产者消费者问题可以用阻塞队列实现。当队列已满，生产者线程就会被阻塞，当队列为空，消费者线程就会被阻塞。
 
-
-
 ---
 
 Callable 与Future
@@ -112,4 +110,18 @@ V call() throws Exception;
 Future保存异步计算的结果。可以启动一个计算，将Future对象交给某个线程，然后忘掉它。Future对象的所有者在结果计算好后就可以获得它。
 
 FutureTask包装器，可以将Callable转换成Future和Runnable，它同时实现这两个接口。
+
+---
+
+执行器（Executor）类有很多静态工厂方法用来构建线程池
+
+| 方法 | 描述 |
+| :--- | :--- |
+| newCachedThreadPool | 必要时创建新线程；空闲线程会被保留60秒 |
+| newFixedThreadPool | 该池包含固定数量的线程；空闲线程会一直被保留 |
+| newSingleThreadExecutor | 只有一个线程的池，该线程顺序执行每一个提交的任务 |
+| newScheduledThreadPool | 用于预定执行而构建的固定线程池，替代java.util.Timer |
+| newSingleThreadScheduledExecutor | 用于预定执行而构建的单线程池 |
+
+
 

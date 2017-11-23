@@ -24,4 +24,5 @@
 * [集合](ji-he.md)
 * [多线程](duo-xian-cheng.md)
   * [锁对象](duo-xian-cheng/suo-dui-xiang.md)
+* [分布式对象](duo-xian-cheng/fen-bu-shi-dui-xiang.md)
 
