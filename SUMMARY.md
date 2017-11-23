@@ -28,6 +28,8 @@
 * [Java新特性](jdk56789xin-te-xing.md)
   * [Java5新特性](jdk56789xin-te-xing/java5xin-te-xing.md)
   * [Java6新特性](jdk56789xin-te-xing/java6xin-te-xing.md)
-* [Java8新特性](java8xin-te-xing.md)
-  * [default方法](java8xin-te-xing/defaultfang-fa-3001.md)
+  * [Java7新特性](jdk56789xin-te-xing/java7xin-te-xing.md)
+  * [Java8新特性](java8xin-te-xing.md)
+    * [default方法](java8xin-te-xing/defaultfang-fa-3001.md)
+  * [Java9新特性](jdk56789xin-te-xing/java9xin-te-xing.md)
 
