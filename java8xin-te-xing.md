@@ -2,6 +2,8 @@
 
 译文：[www.jianshu.com/p/5b800057f2d8](/www.jianshu.com/p/5b800057f2d8)
 
+[http://ifeve.com/java-8-features-tutorial/](http://ifeve.com/java-8-features-tutorial/)
+
 原文：[https://www.javacodegeeks.com/2014/05/java-8-features-tutorial.html](https://www.javacodegeeks.com/2014/05/java-8-features-tutorial.html)
 
 [https://www.javacodegeeks.com/2014/04/15-must-read-java-8-tutorials.html](https://www.javacodegeeks.com/2014/04/15-must-read-java-8-tutorials.html)
@@ -46,6 +48,4 @@ Java类库的新特性
 ---
 
 JVM
-
-
 
