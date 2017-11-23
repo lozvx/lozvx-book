@@ -25,4 +25,8 @@
 * [多线程](duo-xian-cheng.md)
   * [锁对象](duo-xian-cheng/suo-dui-xiang.md)
 * [分布式对象](duo-xian-cheng/fen-bu-shi-dui-xiang.md)
+* [Java新特性](jdk56789xin-te-xing.md)
+  * [Java5新特性](jdk56789xin-te-xing/java5xin-te-xing.md)
+* [Java8新特性](java8xin-te-xing.md)
+  * [default方法](java8xin-te-xing/defaultfang-fa-3001.md)
 
