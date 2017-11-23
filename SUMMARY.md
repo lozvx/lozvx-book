@@ -31,5 +31,6 @@
   * [Java7新特性](jdk56789xin-te-xing/java7xin-te-xing.md)
   * [Java8新特性](java8xin-te-xing.md)
   * [Java9新特性](jdk56789xin-te-xing/java9xin-te-xing.md)
+* [Java Utils](java-utils.md)
 * [Google Guava](google-guava.md)
 
