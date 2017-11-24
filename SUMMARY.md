@@ -37,4 +37,5 @@
   * [Collections](google-guava/collections.md)
   * [Cache](google-guava/cache.md)
   * [String utilities](google-guava/string-utilities.md)
+  * [Reflection](google-guava/reflection.md)
 
