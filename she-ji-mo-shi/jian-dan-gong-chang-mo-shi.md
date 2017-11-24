@@ -4,5 +4,26 @@
 
 
 
+```java
+package designpattern.simpleFactory;
+
+public class Factory {
+    public static Product getProduct(String productName) {
+        if (productName == null) {
+            return null;
+        }
+        switch (productName) {
+            case "A":
+                return new ProductA();
+            case "B":
+                return new ProductB();
+            default:
+                return null;
+        }
+    }
+}
+
+```
+
 
 
