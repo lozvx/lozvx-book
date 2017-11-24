@@ -47,4 +47,5 @@
 * [抽象工厂模式](she-ji-mo-shi/chou-xiang-gong-chang-mo-shi.md)
 * [单例模式](she-ji-mo-shi/dan-li-mo-shi.md)
 * [原型模式](she-ji-mo-shi/yuan-xing-mo-shi.md)
+* [建造者模式](she-ji-mo-shi/jian-zao-zhe-mo-shi.md)
 
