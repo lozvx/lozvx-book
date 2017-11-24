@@ -33,4 +33,6 @@
   * [Java9新特性](jdk56789xin-te-xing/java9xin-te-xing.md)
 * [Java Utils](java-utils.md)
 * [Google Guava](google-guava.md)
+  * [Basic Utils](google-guava/basic-utils.md)
+  * [Collections](google-guava/collections.md)
 
