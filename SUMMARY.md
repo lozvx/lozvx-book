@@ -39,3 +39,7 @@
   * [String utilities](google-guava/string-utilities.md)
   * [Reflection](google-guava/reflection.md)
 
+## 设计模式
+
+* [介绍](she-ji-mo-shi/jie-shao.md)
+
