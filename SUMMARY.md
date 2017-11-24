@@ -35,4 +35,6 @@
 * [Google Guava](google-guava.md)
   * [Basic Utils](google-guava/basic-utils.md)
   * [Collections](google-guava/collections.md)
+  * [Cache](google-guava/cache.md)
+  * [String utilities](google-guava/string-utilities.md)
 
