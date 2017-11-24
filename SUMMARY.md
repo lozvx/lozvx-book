@@ -42,4 +42,5 @@
 ## 设计模式
 
 * [介绍](she-ji-mo-shi/jie-shao.md)
+* [简单工厂模式](she-ji-mo-shi/jian-dan-gong-chang-mo-shi.md)
 
