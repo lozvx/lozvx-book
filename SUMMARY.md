@@ -52,4 +52,5 @@
 * [桥接模式](she-ji-mo-shi/qiao-jie-mo-shi.md)
 * [组合模式](she-ji-mo-shi/zu-he-mo-shi.md)
 * [装饰模式](she-ji-mo-shi/zhuang-shi-mo-shi.md)
+* [外观模式](she-ji-mo-shi/wai-guan-mo-shi.md)
 
