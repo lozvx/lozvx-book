@@ -50,4 +50,6 @@
 * [建造者模式](she-ji-mo-shi/jian-zao-zhe-mo-shi.md)
 * [适配器模式](she-ji-mo-shi/shi-pei-qi-mo-shi.md)
 * [桥接模式](she-ji-mo-shi/qiao-jie-mo-shi.md)
+* [组合模式](she-ji-mo-shi/zu-he-mo-shi.md)
+* [装饰模式](she-ji-mo-shi/zhuang-shi-mo-shi.md)
 
