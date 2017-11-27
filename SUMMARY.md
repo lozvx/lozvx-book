@@ -55,4 +55,6 @@
 * [外观模式](she-ji-mo-shi/wai-guan-mo-shi.md)
 * [享元模式-Flyweight Pattern](she-ji-mo-shi/xiang-yuan-mo-shi.md)
 * [代理模式-Proxy Pattern](she-ji-mo-shi/dai-li-mo-5f0f-proxy-pattern.md)
+* [职责链模式-Chain of Responsibility Pattern](she-ji-mo-shi/zhi-ze-lian-mo-5f0f-chain-of-responsibility-pattern.md)
+* [命令模式-Command Pattern](she-ji-mo-shi/ming-ling-mo-5f0f-command-pattern.md)
 
