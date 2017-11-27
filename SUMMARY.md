@@ -57,4 +57,6 @@
 * [代理模式-Proxy Pattern](she-ji-mo-shi/dai-li-mo-5f0f-proxy-pattern.md)
 * [职责链模式-Chain of Responsibility Pattern](she-ji-mo-shi/zhi-ze-lian-mo-5f0f-chain-of-responsibility-pattern.md)
 * [命令模式-Command Pattern](she-ji-mo-shi/ming-ling-mo-5f0f-command-pattern.md)
+* [解释器模型-Interpreter Pattern](she-ji-mo-shi/jie-shiqi-mo-578b-interpreter-pattern.md)
+* [迭代器模式-Iterator Pattern](she-ji-mo-shi/die-daiqi-mo-5f0f-iterator-pattern.md)
 
