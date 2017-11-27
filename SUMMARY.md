@@ -53,4 +53,6 @@
 * [组合模式](she-ji-mo-shi/zu-he-mo-shi.md)
 * [装饰模式](she-ji-mo-shi/zhuang-shi-mo-shi.md)
 * [外观模式](she-ji-mo-shi/wai-guan-mo-shi.md)
+* [享元模式-Flyweight Pattern](she-ji-mo-shi/xiang-yuan-mo-shi.md)
+* [代理模式-Proxy Pattern](she-ji-mo-shi/dai-li-mo-5f0f-proxy-pattern.md)
 
