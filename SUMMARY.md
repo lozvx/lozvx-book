@@ -59,4 +59,11 @@
 * [命令模式-Command Pattern](she-ji-mo-shi/ming-ling-mo-5f0f-command-pattern.md)
 * [解释器模型-Interpreter Pattern](she-ji-mo-shi/jie-shiqi-mo-578b-interpreter-pattern.md)
 * [迭代器模式-Iterator Pattern](she-ji-mo-shi/die-daiqi-mo-5f0f-iterator-pattern.md)
+* [中介者模式-Mediator Pattern](she-ji-mo-shi/zhong-jie-zhe-mo-5f0f-mediator-pattern.md)
+* [备忘录模式-Memento Pattern](she-ji-mo-shi/bei-wang-lu-mo-shi.md)
+* [观察者模式-Observer Pattern](she-ji-mo-shi/guan-cha-zhe-mo-5f0f-observer-pattern.md)
+* [状态模式-State Pattern](she-ji-mo-shi/zhuang-tai-mo-5f0f-state-pattern.md)
+* [策略模式-Stategy Pattern](she-ji-mo-shi/ce-lve-mo-5f0f-stategy-pattern.md)
+* [模板方法模式-Template Method pattern](she-ji-mo-shi/mo-ban-fang-fa-mo-5f0f-template-method-pattern.md)
+* [访问者模式-Visitor Pattern](she-ji-mo-shi/fang-wen-zhe-mo-5f0f-visitor-pattern.md)
 
