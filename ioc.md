@@ -16,5 +16,9 @@
 
 > 程序启动，spring框架去找配置文件创建资源，把资源放置再一个容器中，开始运行，前端请求数据，在spring中找controller层，再找service层，再找dao层要数据，最后数据原路返回controller，再显示到页面上。其中service被spring注入到controlller层，dao层被spring注入到service层。这个过程分工明确。每一层各司其职。传统的一个开发，在servlet中直接new然后去查数据，然后数据返回到界面上。万一操作一多所有的判断，查询不同的表，这个servlet的代码变得十分的臃肿。不说开发慢，你开发完了看代码也费劲。 所以说控制反转可以用来解耦
 
+ 
 
+---
+
+The BeanFactory interface provides an advanced configuration mechanism capable of managing any type of object. ApplicationContext is a sub-interface of BeanFactory
 
