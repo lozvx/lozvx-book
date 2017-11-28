@@ -71,6 +71,8 @@
 
 * [介绍](jian-jie.md)
 * [Spring 事务](spring-shi-wu.md)
+* [IOC](ioc.md)
+* [AOP](aop.md)
 
 ## Maven
 
