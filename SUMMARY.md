@@ -74,6 +74,7 @@
 * [The Ioc Constainer](ioc.md)
   * [Container overview](ioc/container-overview.md)
   * [Bean overview](ioc/bean-overview.md)
+  * [Dependencies](ioc/dependencies.md)
 * [AOP](aop.md)
 
 ## Maven
