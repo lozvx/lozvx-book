@@ -76,6 +76,7 @@
   * [Bean overview](ioc/bean-overview.md)
   * [Dependencies](ioc/dependencies.md)
   * [Dependencies and configuration in detail](ioc/dependencies-and-configuration-in-detail.md)
+  * [Using Depends-on](ioc/using-depends-on.md)
 * [AOP](aop.md)
 
 ## Maven
