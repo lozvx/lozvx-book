@@ -169,3 +169,97 @@ public class MovieRecommender {
 
 
 
+---
+
+* @Resource
+
+JSR-250
+
+[/wiki.jikexueyuan.com/project/spring/annotation-based-configuration/spring-jsr250-annotation.html](/wiki.jikexueyuan.com/project/spring/annotation-based-configuration/spring-jsr250-annotation.html)
+
+根据name执行自动装配，就使用@Resource注解，而不应该使用@Autowired与@Qualifier的组合。
+
+```
+public class SimpleMovieLister {
+
+    private MovieFinder movieFinder;
+
+    @Resource(name="myMovieFinder")
+    public void setMovieFinder(MovieFinder movieFinder) {
+        this.movieFinder = movieFinder;
+    }
+}
+```
+
+如果没有指定名字，则默认用属性的名字。
+
+```
+public class SimpleMovieLister {
+
+    private MovieFinder movieFinder;
+
+    @Resource
+    public void setMovieFinder(MovieFinder movieFinder) {
+        this.movieFinder = movieFinder;
+    }
+}
+```
+
+```
+public class MovieRecommender {
+
+    @Resource
+    private CustomerPreferenceDao customerPreferenceDao;
+
+    @Resource
+    private ApplicationContext context;
+
+    public MovieRecommender() {
+    }
+
+    // ...
+}
+```
+
+
+
+---
+
+@PostConstruct @PreDestroy
+
+```
+package com.desmond.demo.annotation;
+
+import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+@Component
+public class HelloWorld {
+    private String message;
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getMessage() {
+        System.out.println("Your Message : " + message);
+        return message;
+    }
+
+    @PostConstruct
+    public void init() {
+        System.out.println("Bean is going through init.");
+    }
+
+    @PreDestroy
+    public void destroy() {
+        System.out.println("Bean will destroy now.");
+    }
+}
+
+```
+
+
+
