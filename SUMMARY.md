@@ -78,6 +78,7 @@
   * [Dependencies and configuration in detail](ioc/dependencies-and-configuration-in-detail.md)
   * [Using Depends-on](ioc/using-depends-on.md)
   * [Autowire](ioc/autowire.md)
+  * [Bean scopes](ioc/bean-scopes.md)
 * [AOP](aop.md)
 
 ## Maven
