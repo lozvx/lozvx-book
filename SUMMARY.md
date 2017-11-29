@@ -77,6 +77,7 @@
   * [Dependencies](ioc/dependencies.md)
   * [Dependencies and configuration in detail](ioc/dependencies-and-configuration-in-detail.md)
   * [Using Depends-on](ioc/using-depends-on.md)
+  * [Autowire](ioc/autowire.md)
 * [AOP](aop.md)
 
 ## Maven
