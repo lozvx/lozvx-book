@@ -79,6 +79,7 @@
   * [Using Depends-on](ioc/using-depends-on.md)
   * [Autowire](ioc/autowire.md)
   * [Bean scopes](ioc/bean-scopes.md)
+  * [Custiomizing the nature of a bean](ioc/custiomizing-the-nature-of-a-bean.md)
 * [AOP](aop.md)
 
 ## Maven
