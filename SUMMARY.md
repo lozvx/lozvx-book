@@ -80,6 +80,7 @@
   * [Autowire](ioc/autowire.md)
   * [Bean scopes](ioc/bean-scopes.md)
   * [Custiomizing the nature of a bean](ioc/custiomizing-the-nature-of-a-bean.md)
+  * [Annotation-based container configuration](ioc/annotation-based-container-configuration.md)
 * [AOP](aop.md)
 
 ## Maven
