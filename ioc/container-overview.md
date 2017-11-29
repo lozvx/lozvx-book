@@ -1,6 +1,6 @@
 ![](/assets/iocContainer.png)
 
-1. Configuration：XML Annotation
+1.Configuration：XML ,Annotation, Java-configuration
 
 2.instantiating a container
 
@@ -10,7 +10,6 @@ ApplicationContext context = new ClassPathXmlApplicationContext("services.xml", 
 or
 
 ApplicationContext ctx = new AnnotationConfigApplicationContext("com.desmond.demo*");
-
 ```
 
 3.Using the container
