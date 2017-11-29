@@ -75,6 +75,7 @@
   * [Container overview](ioc/container-overview.md)
   * [Bean overview](ioc/bean-overview.md)
   * [Dependencies](ioc/dependencies.md)
+  * [Dependencies and configuration in detail](ioc/dependencies-and-configuration-in-detail.md)
 * [AOP](aop.md)
 
 ## Maven
