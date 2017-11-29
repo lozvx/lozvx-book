@@ -71,7 +71,9 @@
 
 * [介绍](jian-jie.md)
 * [Spring 事务](spring-shi-wu.md)
-* [IOC](ioc.md)
+* [The Ioc Constainer](ioc.md)
+  * [Container overview](ioc/container-overview.md)
+  * [Bean overview](ioc/bean-overview.md)
 * [AOP](aop.md)
 
 ## Maven
