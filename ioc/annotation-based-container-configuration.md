@@ -2,6 +2,8 @@
 
 ![](/assets/Selection_011.png)
 
+---
+
 * @Required
 
 这个注解是加在setter方法上的。检查这个属性在配置阶段有没有填充。如果没有填充就会抛异常。
@@ -19,6 +21,8 @@ public class SimpleMovieLister {
     // ...
 }
 ```
+
+---
 
 * @Autowired
 
@@ -88,6 +92,74 @@ public class MovieRecommender {
 
     @Autowired
     public MovieRecommender(CustomerPreferenceDao customerPreferenceDao) {
+        this.customerPreferenceDao = customerPreferenceDao;
+    }
+
+    // ...
+}
+```
+
+---
+
+* @Primary
+
+因为根据类型自动织入，可能会有多个实例。这时候如果有一个注解了Primary，就会自动选择这个注入。
+
+下面这个例子就会注入firstMovieCatalog
+
+```
+@Configuration
+public class MovieConfiguration {
+
+    @Bean
+    @Primary
+    public MovieCatalog firstMovieCatalog() { ... }
+
+    @Bean
+    public MovieCatalog secondMovieCatalog() { ... }
+
+    // ...
+}
+```
+
+```
+public class MovieRecommender {
+
+    @Autowired
+    private MovieCatalog movieCatalog;
+
+    // ...
+}
+```
+
+---
+
+* @Qualifier
+
+如果自动织入发现有多个Bean，也可以用Qualifier里的value指定Bean的id
+
+```
+public class MovieRecommender {
+
+    @Autowired
+    @Qualifier("main")
+    private MovieCatalog movieCatalog;
+
+    // ...
+}
+```
+
+```
+public class MovieRecommender {
+
+    private MovieCatalog movieCatalog;
+
+    private CustomerPreferenceDao customerPreferenceDao;
+
+    @Autowired
+    public void prepare(@Qualifier("main")MovieCatalog movieCatalog,
+            CustomerPreferenceDao customerPreferenceDao) {
+        this.movieCatalog = movieCatalog;
         this.customerPreferenceDao = customerPreferenceDao;
     }
 
