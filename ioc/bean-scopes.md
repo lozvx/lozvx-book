@@ -28,5 +28,55 @@ Bean scopes:
 
 The request, session, application, and websocket scopes are only available if you use a web-aware Spring ApplicationContext implementation \(such as XmlWebApplicationContext\). If you use these scopes with regular Spring IoC containers such as the ClassPathXmlApplicationContext, an IllegalStateException will be thrown complaining about an unknown bean scope.
 
+这几个Bean scope只有在web的spring项目中。
+
+* request
+
+```
+<bean id="loginAction" class="com.foo.LoginAction" scope="request"/>
+```
+
+or
+
+```
+@RequestScope
+@Component
+public class LoginAction {
+    // ...
+}
+```
+
+* session
+
+```
+<bean id="userPreferences" class="com.foo.UserPreferences" scope="session"/>
+```
+
+or
+
+```
+@SessionScope
+@Component
+public class UserPreferences {
+    // ...
+}
+```
+
+* application
+
+```
+<bean id="appPreferences" class="com.foo.AppPreferences" scope="application"/>
+```
+
+or
+
+```
+@ApplicationScope
+@Component
+public class AppPreferences {
+    // ...
+}
+```
+
 
 
