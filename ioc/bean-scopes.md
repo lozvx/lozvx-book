@@ -24,5 +24,9 @@ Bean scopes:
 <bean id="accountService" class="com.foo.DefaultAccountService" scope="prototype"/>
 ```
 
+* Request, session, application, and WebSocket scopes
+
+The request, session, application, and websocket scopes are only available if you use a web-aware Spring ApplicationContext implementation \(such as XmlWebApplicationContext\). If you use these scopes with regular Spring IoC containers such as the ClassPathXmlApplicationContext, an IllegalStateException will be thrown complaining about an unknown bean scope.
+
 
 
