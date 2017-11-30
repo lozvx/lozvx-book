@@ -53,8 +53,6 @@ Resource template = ctx.getResource("some/resource/path/myTemplate.txt");
 | http: | [`http://myserver/logo.png`](http://myserver/logo.png) | Loaded as a `URL`. |
 | \(none\) | `/data/config.xml` | Depends on the underlying `ApplicationContext`. |
 
-
-
 Resource作为依赖
 
 如果没有写前缀，ApplicationContext 会自动选择Loader，ClassPathResource, FileSystemResource, or ServletContextResource
@@ -69,6 +67,35 @@ Resource作为依赖
 
 ```
 <property name="template" value="classpath:some/resource/path/myTemplate.txt">
+```
+
+
+
+`ClassPathXmlApplicationContext：`
+
+```
+ApplicationContext ctx = new ClassPathXmlApplicationContext("conf/appContext.xml");
+```
+
+`FileSystemXmlApplicationContext：`
+
+```
+ApplicationContext ctx =
+    new FileSystemXmlApplicationContext("conf/appContext.xml");
+```
+
+`FileSystemXmlApplicationContext：`
+
+```
+ApplicationContext ctx =
+    new FileSystemXmlApplicationContext("classpath:conf/appContext.xml");
+```
+
+
+
+```
+ApplicationContext ctx = new ClassPathXmlApplicationContext(
+    new String[] {"services.xml", "daos.xml"}, MessengerService.class);
 ```
 
 

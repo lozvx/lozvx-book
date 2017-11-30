@@ -86,6 +86,8 @@
   * [BeanFactory or ApplicationContext](ioc/beanfactory-or-applicationcontext.md)
 * [Resources](resources.md)
 * [AOP](aop.md)
+* [Validation,Data Bining, and Type Conversion](validationdata-bining-and-type-conversion.md)
+* [Aspect Oriented Programming with Spring](aspect-oriented-programming-with-spring.md)
 
 ## Maven
 
