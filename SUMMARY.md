@@ -81,6 +81,7 @@
   * [Bean scopes](ioc/bean-scopes.md)
   * [Custiomizing the nature of a bean](ioc/custiomizing-the-nature-of-a-bean.md)
   * [Annotation-based container configuration](ioc/annotation-based-container-configuration.md)
+  * [JSR-330 Annotation](ioc/jsr-330-annotation.md)
 * [AOP](aop.md)
 
 ## Maven

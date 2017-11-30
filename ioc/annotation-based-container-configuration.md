@@ -167,8 +167,6 @@ public class MovieRecommender {
 }
 ```
 
-
-
 ---
 
 * @Resource
@@ -221,8 +219,6 @@ public class MovieRecommender {
 }
 ```
 
-
-
 ---
 
 @PostConstruct @PreDestroy
@@ -258,7 +254,16 @@ public class HelloWorld {
         System.out.println("Bean will destroy now.");
     }
 }
+```
 
+---
+
+```
+@Configuration
+@ComponentScan(basePackages = "org.example")
+public class AppConfig  {
+    ...
+}
 ```
 
 
