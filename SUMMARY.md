@@ -84,6 +84,7 @@
   * [JSR-330 Annotation](ioc/jsr-330-annotation.md)
   * [Java-based container configuration](ioc/java-based-container-configuration.md)
   * [BeanFactory or ApplicationContext](ioc/beanfactory-or-applicationcontext.md)
+* [Resources](resources.md)
 * [AOP](aop.md)
 
 ## Maven
