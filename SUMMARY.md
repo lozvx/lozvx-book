@@ -104,6 +104,8 @@
 
 ## Redis
 
+* [介绍](redis/jie-shao.md)
+
 ## Dubbo
 
 ## MQ
