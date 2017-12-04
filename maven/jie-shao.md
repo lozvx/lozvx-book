@@ -1,4 +1,4 @@
-# clean: 清理输出目录 target
+ean: 清理输出目录 target
 
 compile： 编译项目主代码
 
@@ -30,8 +30,6 @@ scope为依赖范围，若依赖范围为test，则表示该依赖只对测试�
 </configuration>
 </plugin>
 ```
-
-
 
 ```
 生成可执行的jar文件
@@ -70,9 +68,6 @@ maven
 
 
 http://blog.csdn.net/crave_shy/article/details/40919169
-
-
-
 ```
 
 ```
@@ -80,18 +75,12 @@ http://blog.csdn.net/crave_shy/article/details/40919169
 ```
 
 ```
-mvn dependency:sources 
+mvn dependency:sources
 ```
 
 dependency management
 
-jetty-
+jetty-maven-plugin可以发现编译后的文件变化后，自动将其更新到jetty容器。
 
-maven
-
--plugin可以发现编译后的文件变化后，自动将其更新到jetty容器。
-
-mvn
-
-dependency:copy-dependencies
+mvn dependency:copy-dependencies
 
