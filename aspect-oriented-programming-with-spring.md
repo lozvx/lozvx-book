@@ -30,5 +30,31 @@ AOP术语：
 
 * _环绕通知（Around Advice）_：包围一个连接点的通知，如方法调用。这是最强大的一种通知类型。环绕通知可以在方法调用前后完成自定义的行为。它也会选择是否继续执行连接点或直接返回它自己的返回值或抛出异常来结束执行。
 
+Spring AOP：
+
+Spring AOP 默认使用JDK动态代理作为AOP代理。所以只能对接口做代理。
+
+Spring AOP 也能用CGLIB代理，在一个类没有实现一个接口时，会默认用CGLIB代理。也可以强制使用CGLIB
+
+AspjectJ：
+
+开启@AspectJ，需要引入aspectjweaver.jar并且开启配置。
+
+注解
+
+```
+@Configuration
+@EnableAspectJAutoProxy
+public class AppConfig {
+
+}
+```
+
+或XML
+
+```
+<aop:aspectj-autoproxy/>
+```
+
 
 

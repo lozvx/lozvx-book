@@ -88,6 +88,7 @@
 * [AOP](aop.md)
 * [Validation,Data Bining, and Type Conversion](validationdata-bining-and-type-conversion.md)
 * [Aspect Oriented Programming with Spring](aspect-oriented-programming-with-spring.md)
+  * [@Aspectj support](aspect-oriented-programming-with-spring/aspectj-support.md)
 
 ## Maven
 
