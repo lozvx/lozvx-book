@@ -1,4 +1,4 @@
-ean: 清理输出目录 target
+clean: 清理输出目录 target
 
 compile： 编译项目主代码
 
