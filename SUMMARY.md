@@ -110,5 +110,7 @@
 
 ## MQ
 
+* RabbitMQ
+
 ## Zookeeper
 
