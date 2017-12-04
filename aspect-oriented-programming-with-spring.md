@@ -36,7 +36,19 @@ Spring AOP 默认使用JDK动态代理作为AOP代理。所以只能对接口做
 
 Spring AOP 也能用CGLIB代理，在一个类没有实现一个接口时，会默认用CGLIB代理。也可以强制使用CGLIB
 
+强制使用CGLIB
 
+```
+<aop:config proxy-target-class="true">
+    <!-- other beans defined here... -->
+</aop:config>
+```
+
+AspectJ
+
+```
+<aop:aspectj-autoproxy proxy-target-class="true"/>
+```
 
 
 
