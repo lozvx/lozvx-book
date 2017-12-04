@@ -42,5 +42,5 @@
 
 `Generic concept about scm`
 
-[`https://homes.cs.washington.edu/~mernst/advice/version-control.html`](https://homes.cs.washington.edu/%7Emernst/advice/version-control.html)
+[`https://homes.cs.washington.edu/~mernst/advice/version-control.html`](https://homes.cs.washington.edu/~mernst/advice/version-control.html)
 
