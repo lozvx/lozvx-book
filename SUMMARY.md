@@ -40,6 +40,7 @@
   * [Reflection](google-guava/reflection.md)
 * [JDK8 源码阅读](jdk8-yuan-ma-yue-du.md)
   * [Object](jdk8-yuan-ma-yue-du/object.md)
+  * [String](jdk8-yuan-ma-yue-du/string.md)
 
 ## 设计模式
 
