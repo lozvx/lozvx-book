@@ -10,7 +10,7 @@ value保存值，hash缓存hashcode
 
 Java中的数组很多用System.arraycopy\(\)方法进行数组拷贝，String中的substring，ArrayList中的add，remove等。
 
-http://xuyuanshuaaa.iteye.com/blog/1046621
+[http://xuyuanshuaaa.iteye.com/blog/1046621](http://xuyuanshuaaa.iteye.com/blog/1046621)
 
 下面的方法是，将toIndex后的元素 往前copy，然后将后面的元素 =null，让GC回收。
 
