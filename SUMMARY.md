@@ -44,6 +44,7 @@
   * [Boolean](jdk8-yuan-ma-yue-du/boolean.md)
   * [CharSequence](jdk8-yuan-ma-yue-du/charsequence.md)
   * ArrayList
+  * [BitSet](jdk8-yuan-ma-yue-du/bitset.md)
 
 ## 设计模式
 
