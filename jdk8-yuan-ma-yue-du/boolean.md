@@ -1,5 +1,3 @@
-
-
 Value:
 
 ```
@@ -10,8 +8,6 @@ Value:
      */
     private final boolean value;
 ```
-
-
 
 实例：
 
