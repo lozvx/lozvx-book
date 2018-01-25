@@ -42,6 +42,7 @@
   * [Object](jdk8-yuan-ma-yue-du/object.md)
   * [String](jdk8-yuan-ma-yue-du/string.md)
   * [Boolean](jdk8-yuan-ma-yue-du/boolean.md)
+  * [CharSequence](jdk8-yuan-ma-yue-du/charsequence.md)
 
 ## 设计模式
 
