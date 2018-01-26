@@ -45,6 +45,7 @@
   * [CharSequence](jdk8-yuan-ma-yue-du/charsequence.md)
   * ArrayList
   * [BitSet](jdk8-yuan-ma-yue-du/bitset.md)
+  * [HashMap](jdk8-yuan-ma-yue-du/hashmap.md)
 
 ## 设计模式
 
