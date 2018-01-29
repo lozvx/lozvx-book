@@ -47,6 +47,7 @@
   * [BitSet](jdk8-yuan-ma-yue-du/bitset.md)
   * [HashMap](jdk8-yuan-ma-yue-du/hashmap.md)
   * [HashSet](jdk8-yuan-ma-yue-du/hashset.md)
+  * [TreeMap](jdk8-yuan-ma-yue-du/treemap.md)
 
 ## 设计模式
 
