@@ -43,7 +43,7 @@
   * [String](jdk8-yuan-ma-yue-du/string.md)
   * [Boolean](jdk8-yuan-ma-yue-du/boolean.md)
   * [CharSequence](jdk8-yuan-ma-yue-du/charsequence.md)
-  * ArrayList
+  * [ArrayList](jdk8-yuan-ma-yue-du/arraylist.md)
   * [BitSet](jdk8-yuan-ma-yue-du/bitset.md)
   * [HashMap](jdk8-yuan-ma-yue-du/hashmap.md)
   * [HashSet](jdk8-yuan-ma-yue-du/hashset.md)
