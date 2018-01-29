@@ -1,5 +1,9 @@
 参考：[https://yikun.github.io/2015/04/01/Java-HashMap工作原理及实现/](https://yikun.github.io/2015/04/01/Java-HashMap工作原理及实现/)
 
+https://stackoverflow.com/questions/510632/whats-the-difference-between-concurrenthashmap-and-collections-synchronizedmap
+
+
+
 HashCode:
 
 ```
@@ -153,7 +157,7 @@ Get：
         Node<K,V> e;
         return (e = getNode(hash(key), key)) == null ? null : e.value;
     }
-    
+
         final Node<K,V> getNode(int hash, Object key) {
         Node<K,V>[] tab; Node<K,V> first, e; int n; K k;
         if ((tab = table) != null && (n = tab.length) > 0 &&
@@ -177,7 +181,7 @@ Get：
 
 Resize：
 
- **Initial capacity**
+**Initial capacity**
 
 The capacity is **the number of buckets **in the hash table, The initial capacity is simply the capacity at the time the hash table is created.
 
@@ -185,15 +189,11 @@ The capacity is **the number of buckets **in the hash table, The initial capacit
 
 The load factor is **a measure of how full the hash table is allowed to get **before its capacity is automatically increased.
 
-
-
 初始容量 16
 
 默认加载因子 0.75
 
 当bucket填充的数目（即hashmap中元素的个数）大于`capacity*load factor`时就需要调整buckets的数目为当前的2倍。
-
-
 
 ```
     /**
@@ -279,7 +279,6 @@ The load factor is **a measure of how full the hash table is allowed to get **be
         }
         return newTab;
     }
-
 ```
 
 
