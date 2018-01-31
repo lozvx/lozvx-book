@@ -3,11 +3,10 @@
 * AtomicBoolean：原子更新布尔类型
 
 * AtomicInteger：原子更新整型
+
 * AtomicLong：原子更新长整型
 
 这3个类的实现原理和使用方式几乎是一样的，这里我们以AtomicInteger为例进行分析，AtomicInteger主要是针对int类型的数据执行原子操作，它提供了原子自增方法、原子自减方法以及原子赋值方法等，鉴于AtomicInteger的源码不多，我们直接看源码
-
-
 
 ```
 public class AtomicInteger extends Number implements java.io.Serializable {
@@ -83,73 +82,154 @@ public class AtomicInteger extends Number implements java.io.Serializable {
 }
 ```
 
-
-
 Demo：
 
 ```
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class AtomicIntegerDemo {
-	//创建AtomicInteger,用于自增操作
-	static AtomicInteger i = new AtomicInteger();
-	static int i2 = 0;
+    //创建AtomicInteger,用于自增操作
+    static AtomicInteger i = new AtomicInteger();
+    static int i2 = 0;
 
-	public static class AddThread implements Runnable {
-		public void run() {
-			for (int k = 0; k < 10000; k++)
-				i.incrementAndGet();
-		}
-	}
+    public static class AddThread implements Runnable {
+        public void run() {
+            for (int k = 0; k < 10000; k++)
+                i.incrementAndGet();
+        }
+    }
 
-	public static class AddThread2 implements Runnable {
-		public void run() {
-			for (int k = 0; k < 10000; k++)
-				i2++;
-		}
+    public static class AddThread2 implements Runnable {
+        public void run() {
+            for (int k = 0; k < 10000; k++)
+                i2++;
+        }
 
-	}
+    }
 
-	public static void main(String[] args) throws InterruptedException {
-		test1();
-		test2();
-	}
+    public static void main(String[] args) throws InterruptedException {
+        test1();
+        test2();
+    }
 
-	private static void test1() throws InterruptedException {
-		Thread[] ts = new Thread[10];
-		//开启10条线程同时执行i的自增操作
-		for (int k = 0; k < 10; k++) {
-			ts[k] = new Thread(new AddThread());
-		}
-		//启动线程
-		for (int k = 0; k < 10; k++) {
-			ts[k].start();
-		}
+    private static void test1() throws InterruptedException {
+        Thread[] ts = new Thread[10];
+        //开启10条线程同时执行i的自增操作
+        for (int k = 0; k < 10; k++) {
+            ts[k] = new Thread(new AddThread());
+        }
+        //启动线程
+        for (int k = 0; k < 10; k++) {
+            ts[k].start();
+        }
 
-		for (int k = 0; k < 10; k++) {
-			ts[k].join();
-		}
+        for (int k = 0; k < 10; k++) {
+            ts[k].join();
+        }
 
-		System.out.println(i);//输出结果:100000
-	}
+        System.out.println(i);//输出结果:100000
+    }
 
-	private static void test2() throws InterruptedException {
-		Thread[] ts = new Thread[10];
-		//开启10条线程同时执行i的自增操作
-		for (int k = 0; k < 10; k++) {
-			ts[k] = new Thread(new AddThread2());
-		}
-		//启动线程
-		for (int k = 0; k < 10; k++) {
-			ts[k].start();
-		}
+    private static void test2() throws InterruptedException {
+        Thread[] ts = new Thread[10];
+        //开启10条线程同时执行i的自增操作
+        for (int k = 0; k < 10; k++) {
+            ts[k] = new Thread(new AddThread2());
+        }
+        //启动线程
+        for (int k = 0; k < 10; k++) {
+            ts[k].start();
+        }
 
-		for (int k = 0; k < 10; k++) {
-			ts[k].join();
-		}
+        for (int k = 0; k < 10; k++) {
+            ts[k].join();
+        }
 
-		System.out.println(i2);//输出结果:100000
-	}
+        System.out.println(i2);//输出结果:100000
+    }
+}
+```
+
+
+
+原子更新引用：
+
+```
+public class AtomicReference<V> implements java.io.Serializable {
+    private static final Unsafe unsafe = Unsafe.getUnsafe();
+    private static final long valueOffset;
+
+    static {
+        try {
+            valueOffset = unsafe.objectFieldOffset
+                (AtomicReference.class.getDeclaredField("value"));
+        } catch (Exception ex) { throw new Error(ex); }
+    }
+    //内部变量value，Unsafe类通过valueOffset内存偏移量即可获取该变量
+    private volatile V value;
+
+//CAS方法，间接调用unsafe.compareAndSwapObject(),它是一个
+//实现了CAS操作的native方法
+public final boolean compareAndSet(V expect, V update) {
+        return unsafe.compareAndSwapObject(this, valueOffset, expect, update);
+}
+
+//设置并获取旧值
+public final V getAndSet(V newValue) {
+        return (V)unsafe.getAndSetObject(this, valueOffset, newValue);
+    }
+    //省略其他代码......
+}
+
+//Unsafe类中的getAndSetObject方法，实际调用还是CAS操作
+public final Object getAndSetObject(Object o, long offset, Object newValue) {
+      Object v;
+      do {
+          v = getObjectVolatile(o, offset);
+      } while (!compareAndSwapObject(o, offset, v, newValue));
+      return v;
+  }
+```
+
+
+
+Demo：
+
+```
+public class AtomicReferenceDemo2 {
+
+    public static AtomicReference<User> atomicUserRef = new AtomicReference<User>();
+
+    public static void main(String[] args) {
+        User user = new User("zejian", 18);
+        atomicUserRef.set(user);
+        User updateUser = new User("Shine", 25);
+        atomicUserRef.compareAndSet(user, updateUser);
+        //执行结果:User{name='Shine', age=25}
+              System.out.println(atomicUserRef.get().toString());  
+    }
+
+    static class User {
+        public String name;
+        private int age;
+
+        public User(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        @Override
+        public String toString() {
+            return "User{" +
+                    "name='" + name + '\'' +
+                    ", age=" + age +
+                    '}';
+        }
+    }
 }
 ```
 
