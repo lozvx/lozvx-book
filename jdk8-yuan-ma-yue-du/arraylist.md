@@ -36,7 +36,21 @@
     private int size;
 ```
 
-大小增长：1.5\*oldCapacity
+http://www.cnblogs.com/kuoAT/p/6771653.html
+
+
+
+动态扩容：
+
+
+
+默认数组大小为10，ArrayList最大大小Integer.MAX，扩容算法：1.5\*oldCapacity与最小需要扩容大小比较。
+
+
+
+每次重新分配都是用Arrays.copyOf（）方法，这个方法调用的System.arrayCopy是native方法。
+
+
 
 ```
     private void grow(int minCapacity) {
