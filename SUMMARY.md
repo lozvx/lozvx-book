@@ -55,6 +55,7 @@
   * [CAS机制](casji-zhi.md)
   * [ConcurrentHashMap](jdk8-yuan-ma-yue-du/concurrenthashmap.md)
   * [原子操作类](yuan-zi-cao-zuo-lei.md)
+  * [synchronized](synchronized.md)
 
 ## 设计模式
 
