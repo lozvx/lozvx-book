@@ -22,8 +22,6 @@
 * [异常](yi-chang.md)
 * [反射](fan-she.md)
 * [集合](ji-he.md)
-* [多线程](duo-xian-cheng.md)
-  * [锁对象](duo-xian-cheng/suo-dui-xiang.md)
 * [分布式对象](duo-xian-cheng/fen-bu-shi-dui-xiang.md)
 * [Java新特性](jdk56789xin-te-xing.md)
   * [Java5新特性](jdk56789xin-te-xing/java5xin-te-xing.md)
@@ -48,9 +46,13 @@
   * [HashMap](jdk8-yuan-ma-yue-du/hashmap.md)
   * [HashSet](jdk8-yuan-ma-yue-du/hashset.md)
   * [TreeMap](jdk8-yuan-ma-yue-du/treemap.md)
-  * [ConcurrentHashMap](jdk8-yuan-ma-yue-du/concurrenthashmap.md)
+* [Java并发编程](javabing-fa-bian-cheng.md)
+  * 111
+  * [多线程](duo-xian-cheng.md)
+    * [锁对象](duo-xian-cheng/suo-dui-xiang.md)
+  * [乐观锁 & 悲观锁](le-guan-suo-and-bei-guan-suo.md)
   * [CAS机制](casji-zhi.md)
-* [乐观锁 & 悲观锁](le-guan-suo-and-bei-guan-suo.md)
+  * [ConcurrentHashMap](jdk8-yuan-ma-yue-du/concurrenthashmap.md)
 
 ## 设计模式
 
