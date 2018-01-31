@@ -51,6 +51,7 @@
   * [多线程](duo-xian-cheng.md)
     * [锁对象](duo-xian-cheng/suo-dui-xiang.md)
   * [乐观锁 & 悲观锁](le-guan-suo-and-bei-guan-suo.md)
+  * [Unsafe类](unsafelei.md)
   * [CAS机制](casji-zhi.md)
   * [ConcurrentHashMap](jdk8-yuan-ma-yue-du/concurrenthashmap.md)
 
