@@ -47,7 +47,6 @@
   * [HashSet](jdk8-yuan-ma-yue-du/hashset.md)
   * [TreeMap](jdk8-yuan-ma-yue-du/treemap.md)
 * [Java并发编程](javabing-fa-bian-cheng.md)
-  * 111
   * [多线程](duo-xian-cheng.md)
     * [锁对象](duo-xian-cheng/suo-dui-xiang.md)
   * [乐观锁 & 悲观锁](le-guan-suo-and-bei-guan-suo.md)
@@ -57,6 +56,7 @@
   * [原子操作类](yuan-zi-cao-zuo-lei.md)
   * [synchronized](synchronized.md)
   * [全面理解Java内存模型\(JMM\)及volatile关键字](quan-mian-li-jie-java-nei-cun-mo-578b28-jmm-ji-volatile-guan-jian-zi.md)
+  * [Locks](locks.md)
 
 ## 设计模式
 
