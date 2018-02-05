@@ -56,6 +56,7 @@
   * [ConcurrentHashMap](jdk8-yuan-ma-yue-du/concurrenthashmap.md)
   * [原子操作类](yuan-zi-cao-zuo-lei.md)
   * [synchronized](synchronized.md)
+  * [全面理解Java内存模型\(JMM\)及volatile关键字](quan-mian-li-jie-java-nei-cun-mo-578b28-jmm-ji-volatile-guan-jian-zi.md)
 
 ## 设计模式
 
