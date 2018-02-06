@@ -57,6 +57,7 @@
   * [synchronized](synchronized.md)
   * [全面理解Java内存模型\(JMM\)及volatile关键字](quan-mian-li-jie-java-nei-cun-mo-578b28-jmm-ji-volatile-guan-jian-zi.md)
   * [Locks](locks.md)
+  * [阻塞队列](zu-sai-dui-lie.md)
 
 ## 设计模式
 
