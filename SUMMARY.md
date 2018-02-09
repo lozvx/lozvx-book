@@ -125,6 +125,7 @@
 ## Redis
 
 * [介绍](redis/jie-shao.md)
+* [LinkedIn日志系统演化](redis/linkedinri-zhi-xi-tong-yan-hua.md)
 
 ## Dubbo
 
@@ -139,6 +140,4 @@
 ## Spring Boot
 
 ## Kafka
-
-* 基于Kafka和ElasticSearch
 
