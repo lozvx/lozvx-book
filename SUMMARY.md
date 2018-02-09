@@ -126,28 +126,12 @@
 
 * [介绍](redis/jie-shao.md)
 
-## Dubbo
-
-* 介绍
-
 ## MQ
 
 * [RabbitMQ](rabbitmq.md)
 
-## Zookeeper
-
-* 介绍
-
-## ElesticSearch
-
-* 介绍
-
-## Spring Boot
-
-* 介绍
-
 ## Kafka
 
-* [介绍](redis/jie-shao.md)
+* [介绍](kafka/jie-shao.md)
 * [LinkedIn日志系统演化](redis/linkedinri-zhi-xi-tong-yan-hua.md)
 
