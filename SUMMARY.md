@@ -135,3 +135,7 @@
 * [介绍](kafka/jie-shao.md)
 * [LinkedIn日志系统演化](redis/linkedinri-zhi-xi-tong-yan-hua.md)
 
+## Hive
+
+* 介绍
+
