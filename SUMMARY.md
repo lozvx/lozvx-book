@@ -13,6 +13,7 @@
 * [SQL](333.md)
 * [Maven](maven.md)
 * [Redis](redis.md)
+* [IDEA](idea.md)
 
 ## Basic Java
 
