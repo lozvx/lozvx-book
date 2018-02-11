@@ -117,6 +117,7 @@
 ## GIT
 
 * [介绍](git/jie-shao.md)
+* [git 设置代理](git/git-she-zhi-dai-li.md)
 
 ## Docker
 
