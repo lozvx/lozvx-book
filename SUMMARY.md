@@ -119,6 +119,7 @@
 
 * [介绍](git/jie-shao.md)
 * [git 设置代理](git/git-she-zhi-dai-li.md)
+* [同一台机器使用多个git账户](git/tong-yi-taiji-qi-shi-yong-duo-ge-git-zhang-hu.md)
 
 ## Docker
 
