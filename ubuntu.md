@@ -42,3 +42,7 @@ chrome
 
 redis-server
 
+TreeSize
+
+Everywhere
+
