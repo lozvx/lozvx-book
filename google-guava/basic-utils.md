@@ -24,8 +24,6 @@ Precondition:
 
 Ording:
 
-
-
 ---
 
 Objects:
@@ -71,6 +69,18 @@ CompareTo:
 ```
 
 ---
+
+StopWatch:
+
+```java
+ Stopwatch stopwatch = Stopwatch.createStarted();
+ doSomething();
+ stopwatch.stop(); // optional
+
+ long millis = stopwatch.elapsed(MILLISECONDS);
+
+log.info("time: " + stopwatch); // formatted string like "12.3 ms"
+```
 
 
 
