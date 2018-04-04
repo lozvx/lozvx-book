@@ -19,14 +19,12 @@
 
 ```
  必须是面向接口的，只有实现了具体接口的类才能生成代理对象
-
 ```
 
 > 1. 基于CGLIB动态代理
 
 ```
 对于没有实现了接口的类，也可以产生代理，产生这个类的子类的方式
-
 ```
 
 1. Spring的传统AOP中根据类是否实现接口，来采用不同的代理方式
@@ -46,19 +44,18 @@ public
 interface
 Working
 {
-    
+
 void
 wokingOne
 ()
 ;
 
-    
+
 void
 WorkingTwo
 ()
 ;
 }
-
 ```
 
 ```
@@ -69,7 +66,7 @@ WorkingImpl
 implements
 Working
  {
-    
+
 @Override
 
     public void wokingOne() {
@@ -81,7 +78,7 @@ Working
 );
     }
 
-    
+
 @Override
 
     public void WorkingTwo() {
@@ -93,7 +90,6 @@ Working
 );
     }
 }
-
 ```
 
 > 好的，现在我要先做任务1，然后再做任务2我们的写法为:
@@ -115,12 +111,10 @@ new
 //做任务2
 
     }
- 
-
 ```
 
 > 好的精彩的地方来了,我再做任务2之前我要先休息10分钟，但是不能修改源代码。怎么办呢？这时候就用到我们的JDK动态代理了。代码如下：
-
+>
 > 先写一个代理的工具类。再做任务2前我们休息十分钟
 
 ```
@@ -128,7 +122,7 @@ public
 class
 MyProxyUtils
 {
-    
+
 public
 static
  Working 
@@ -137,7 +131,7 @@ getProxy
 final
  Working working)
 {
-        
+
 // 使用Proxy类生成代理对象
 
         Working proxy = (Working) Proxy.newProxyInstance(working.getClass().getClassLoader(),
@@ -145,7 +139,7 @@ final
 new
  InvocationHandler() {
 
-                    
+
 // 代理对象方法一直线，invoke方法就会执行一次
 public
  Object 
@@ -154,7 +148,7 @@ invoke
 throws
  Throwable 
 {
-                        
+
 //再做工作2之前我先休息10分钟
 if
  (
@@ -164,19 +158,18 @@ if
 "休息10分钟"
 );
                         }
-                        
+
 //工作继续进行下去
 return
  method.invoke(working, args);
                     }
                 });
-        
+
 // 返回代理对象
 return
  proxy;
     }
 }
-
 ```
 
 ```
@@ -194,7 +187,6 @@ new
         proxy.WorkingTwo();
 
     }
-
 ```
 
 运行的结果可想而知：
@@ -203,7 +195,6 @@ new
 做任务1
 休息10分钟
 做任务2
-
 ```
 
 #### CGLIB动态代理
@@ -221,7 +212,7 @@ class
 Working
 {
 
-    
+
 public
 void
 wokingOne
@@ -232,7 +223,7 @@ wokingOne
 );
     }
 
-    
+
 public
 void
 WorkingTwo
@@ -243,7 +234,6 @@ WorkingTwo
 );
     }
 }
-
 ```
 
 > new一个对象调用任务1 任务2得到的结果这个就没必要说了。我们重点看下怎么使用CGLIB来在不改变源码的情况下，做任务之前休息十分钟。
@@ -255,23 +245,23 @@ static
 getProxy
 ()
 {
-        
+
 // 创建CGLIB核心的类
 
         Enhancer enhancer = 
 new
  Enhancer();
-        
+
 // 设置父类
 
         enhancer.setSuperclass(Working.class);
-        
+
 // 设置回调函数
 
         enhancer.setCallback(
 new
  MethodInterceptor() {
-            
+
 @Override
 public
  Object 
@@ -281,32 +271,31 @@ intercept
 throws
  Throwable 
 {
-                
+
 if
 (
 "WorkingTwo"
 .equals(method.getName())){
-                    
+
 // 休息10分钟
 
                     System.out.println(
 "休息10分钟..."
 );
                 }
-                
+
 return
  methodProxy.invokeSuper(obj, args);
             }
         });
-        
+
 // 生成代理对象
 
         Working proxy = (Working) enhancer.create();
-        
+
 return
  proxy;
     }
-
 ```
 
 ```
@@ -324,7 +313,6 @@ new
         proxy.WorkingTwo();
 
     }
-
 ```
 
 最后的运行结果也是相同的：
@@ -333,10 +321,17 @@ new
 做任务1
 休息10分钟
 做任务2
-
 ```
 
 #### 分析
 
 我上面简单分析了一下spring AOP的底层实现的两种方式：JDK动态代理，CGLIB。在Spring框架中它会自动选择使用哪一种方式。如果有接口实现类，那就使用jdk动态代理，没有接口就使用CGLIB。有了这个功能那么我们修改东西就方便多了。假设我再做任务一前我需要记录下日志。我就直接写一个切面类，直接去记录日志。都不用修改本身的源码。
+
+
+
+
+
+
+
+
 

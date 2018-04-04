@@ -54,3 +54,7 @@ AspectJ
 
 
 
+Spring AOP 都是运行时增强，无论是JDK代理和CGLIB代理
+
+AspectJ是编译时增强
+
