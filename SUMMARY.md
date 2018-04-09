@@ -149,6 +149,7 @@
 ## Spring Cloud
 
 * [介绍](hive/22.md)
+* [微服务](hive/wei-fu-wu.md)
 
 ## Hadoop
 
