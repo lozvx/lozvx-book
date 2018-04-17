@@ -155,3 +155,7 @@
 
 ## Windows
 
+## 微信小程序
+
+* [介绍](wechat/introduction.md)
+
