@@ -158,4 +158,5 @@
 ## 微信小程序
 
 * [介绍](wechat/introduction.md)
+* [逻辑层](wechat/luo-ji-ceng.md)
 
