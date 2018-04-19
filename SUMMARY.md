@@ -159,4 +159,5 @@
 
 * [介绍](wechat/introduction.md)
 * [逻辑层](wechat/luo-ji-ceng.md)
+* [视图层](wechat/shi-tu-ceng.md)
 
