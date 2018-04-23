@@ -50,7 +50,6 @@ App({
     }
   }
 })
-
 ```
 
 Page\(\)函数注册一个页面。
@@ -110,8 +109,6 @@ Page({
 Page实例生命周期：
 
 ![](/assets/miniapp_reg_page.png)
-
-
 
 ## 页面路由
 
