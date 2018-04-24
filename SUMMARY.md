@@ -150,6 +150,7 @@
 
 * [介绍](hive/22.md)
 * [微服务](hive/wei-fu-wu.md)
+* [yaml vs properties](hive/yaml-vs-properties.md)
 
 ## Hadoop
 
