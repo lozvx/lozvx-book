@@ -153,6 +153,7 @@
 * [介绍](spring-cloud/jie-shao.md)
 * [微服务](spring-cloud/wei-fu-wu.md)
 * [yaml vs properties](spring-cloud/yaml-vs-properties.md)
+* Feign
 
 ## 微信小程序
 
