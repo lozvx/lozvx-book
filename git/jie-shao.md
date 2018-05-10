@@ -1,4 +1,6 @@
-### `Git simple guide★★★★★`
+# 介绍
+
+## `Git simple guide★★★★★`
 
 `Beginner's guide`
 
@@ -8,7 +10,7 @@
 
 [`http://rogerdudler.github.io/git-guide/index.zh.html`](http://rogerdudler.github.io/git-guide/index.zh.html)
 
-### `Pro Git★★★★☆`
+## `Pro Git★★★★☆`
 
 `Complete reference`
 
@@ -18,19 +20,19 @@
 
 [`http://git-scm.com/book/zh/v1`](http://git-scm.com/book/zh/v1)
 
-### `Githug`
+## `Githug`
 
 [`https://github.com/Gazler/githug`](https://github.com/Gazler/githug)
 
 `Exercise to learn Git`
 
-### `One practical branching model`
+## `One practical branching model`
 
 `Principle and practice of Git branching, tag, merge and version`
 
 [`http://nvie.com/posts/a-successful-git-branching-model/`](http://nvie.com/posts/a-successful-git-branching-model/)
 
-### `Git / SVN best practice`
+## `Git / SVN best practice`
 
 `Version control best practice`
 

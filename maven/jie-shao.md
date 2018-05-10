@@ -1,14 +1,16 @@
+# 介绍
+
 clean: 清理输出目录 target
 
 compile： 编译项目主代码
 
-# mvn clean install -DskipTests
+## mvn clean install -DskipTests
 
 mvn dependency:tree
 
 scope为依赖范围，若依赖范围为test，则表示该依赖只对测试有效
 
-```
+```text
 <dependency>
 <groupId>junit</groupId>
 <artifactId>junit</artifactId>
@@ -19,7 +21,7 @@ scope为依赖范围，若依赖范围为test，则表示该依赖只对测试�
 
 由于历史原因，maven核心插件compiler默认只支持编译java1.3，因此需要配置更高java版本
 
-```Xml
+```markup
 <plugin>
 <groupId>org.apache.maven.plugins</groupId>
 <artifactId>maven-compiler-plugin</artifactId>
@@ -31,11 +33,11 @@ scope为依赖范围，若依赖范围为test，则表示该依赖只对测试�
 </plugin>
 ```
 
-```
+```text
 生成可执行的jar文件
 ```
 
-```
+```text
 <plugin>
 <groupId>org.springframework.boot</groupId>
 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -70,11 +72,11 @@ maven
 http://blog.csdn.net/crave_shy/article/details/40919169
 ```
 
-```
+```text
 下载源代码 mvn dependency:sources
 ```
 
-```
+```text
 mvn dependency:sources
 ```
 

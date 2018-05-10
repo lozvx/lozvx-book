@@ -1,8 +1,10 @@
+# 介绍
+
 参考：[https://www.gitbook.com/book/quanke/design-pattern-java/details](https://www.gitbook.com/book/quanke/design-pattern-java/details)
 
 [https://www.gitbook.com/book/quanke/design-pattern-java/details](https://github.com/quanke/design-pattern-java-source-code)
 
-六个创建型模式 
+六个创建型模式
 
 * 简单工厂模式 - Simple Factory Pattern
 * 工厂方法模式 - Factory Method Pattern
@@ -34,6 +36,4 @@
 * 策略模式 - Strategy Pattern
 * 模板方法模式 - Template Method Pattern
 * 访问者模式 - Visitor Pattern
-
-
 
