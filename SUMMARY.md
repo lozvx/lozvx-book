@@ -141,6 +141,7 @@
 
 * [RabbitMQ](mq/rabbitmq.md)
 * [Kafka vs RabbitMQ vs RocketMQ](mq/kafka-vs-rabbitmq-vs-rocketmq.md)
+* [RocketMQ](mq/rocketmq.md)
 
 ## Kafka
 
