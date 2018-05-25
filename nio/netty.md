@@ -6,7 +6,7 @@
 
 netty 聊天室demo ：[https://github.com/waylau/netty-4-user-guide-demos](https://github.com/waylau/netty-4-user-guide-demos)
 
-
+Netty相当于是NIO的封装，提供标准的API，方便开发者。
 
 
 
