@@ -183,11 +183,11 @@ Resize：
 
 **Initial capacity**
 
-The capacity is **the number of buckets **in the hash table, The initial capacity is simply the capacity at the time the hash table is created.
+The capacity is **the number of buckets** in the hash table, The initial capacity is simply the capacity at the time the hash table is created.
 
 **Load factor**
 
-The load factor is **a measure of how full the hash table is allowed to get **before its capacity is automatically increased.
+The load factor is **a measure of how full the hash table is allowed to get** before its capacity is automatically increased.
 
 初始容量 16
 

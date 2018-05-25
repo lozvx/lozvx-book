@@ -3,7 +3,8 @@
 ## 服务端
 
 ```text
-
+docker pull oddrationale/docker-shadowsocks
+docker run -d -p 666:666 oddrationale/docker-shadowsocks -s 0.0.0.0 -p 666 -k $SSPASSWORD -m aes-256-cfb
 ```
 
 or
