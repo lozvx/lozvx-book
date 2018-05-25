@@ -65,6 +65,7 @@
   * [Locks](basic-java/java-bing-fa-bian-cheng/locks.md)
   * [阻塞队列](basic-java/java-bing-fa-bian-cheng/zu-sai-dui-lie.md)
 * [Lombok](basic-java/lombok.md)
+* [排序](basic-java/pai-xu.md)
 
 ## 设计模式
 
