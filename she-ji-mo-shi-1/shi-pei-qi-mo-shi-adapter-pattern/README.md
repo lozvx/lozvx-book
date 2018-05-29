@@ -2,7 +2,7 @@
 
 适配器模式\(Adapter Pattern\):将一个接口转换成客户希望的另一个接口,使接口不兼容的那些类可以一起工作,其别名为包装器\(Wrapper\)。适配器模式既可以作为类结构型模式,也可以作为对象结构型模式
 
-![](../.gitbook/assets/adapterpattern.png)
+![](../../.gitbook/assets/adapterpattern.png)
 
 * Target\(目标抽象类\):目标抽象类定义客户所需接口,可以是一个抽象类或接口,也可以是具体类。
 * Adapter\(适配器类\):适配器可以调用另一个接口,作为一个转换器,对Adaptee和Target进行适配,适配器类是适配器模式的核心,在对象适配器中,它通过继承Target并关联一个Adaptee对象使二者产生联系。
