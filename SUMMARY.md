@@ -64,6 +64,7 @@
   * [全面理解Java内存模型\(JMM\)及volatile关键字](basic-java/java-bing-fa-bian-cheng/quan-mian-li-jie-java-nei-cun-mo-xing-jmm-ji-volatile-guan-jian-zi.md)
   * [Locks](basic-java/java-bing-fa-bian-cheng/locks.md)
   * [阻塞队列](basic-java/java-bing-fa-bian-cheng/zu-sai-dui-lie.md)
+  * [多线程面试问题](basic-java/java-bing-fa-bian-cheng/duo-xian-cheng-mian-shi-wen-ti.md)
 * [Lombok](basic-java/lombok.md)
 * [排序](basic-java/pai-xu.md)
 * [Best Practice](basic-java/best-practice/README.md)
