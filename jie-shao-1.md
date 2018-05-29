@@ -1,4 +1,4 @@
-# 介绍
+# HIVE
 
 官网：[https://hive.apache.org/](https://hive.apache.org/)
 

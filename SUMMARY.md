@@ -1,10 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
-
-## Overview
-
-* [介绍](overview/jie-shao.md)
+* OVEAVIEW
+  * [介绍](oveaview/jie-shao.md)
 * Linux
   * [Ubuntu](linux-1/ubuntu.md)
   * [基本命令](linux-1/ji-ben-ming-ling.md)
@@ -115,52 +113,31 @@
   * [策略模式-Stategy Pattern](she-ji-mo-shi-1/ce-lve-mo-shi-stategy-pattern.md)
   * [模板方法模式-Template Method Pattern](she-ji-mo-shi-1/mo-ban-fang-fa-mo-shi-template-method-pattern.md)
   * [访问者模式-Visitor Pattern](she-ji-mo-shi-1/fang-wen-zhe-mo-shi-visitor-pattern.md)
-
-## Maven
-
-* [介绍](maven/jie-shao.md)
-
-## GIT
-
-* [介绍](git/jie-shao.md)
-* [git 设置代理](git/git-she-zhi-dai-li.md)
-* [同一台机器使用多个git账户](git/tong-yi-tai-ji-qi-shi-yong-duo-ge-git-zhang-hu.md)
-
-## Docker
-
-* [介绍](docker/jie-shao.md)
-
-## Redis
-
-* [介绍](redis/jie-shao.md)
-
-## MQ
-
-* [RabbitMQ](mq/rabbitmq.md)
-* [Kafka vs RabbitMQ vs RocketMQ](mq/kafka-vs-rabbitmq-vs-rocketmq.md)
-* [RocketMQ](mq/rocketmq.md)
-
-## Kafka
-
-* [介绍](kafka/jie-shao.md)
-* [LinkedIn日志系统演化](kafka/linkedin-ri-zhi-xi-tong-yan-hua.md)
-
-## Hive
-
-* [介绍](hive/jie-shao.md)
-
-## Spring Cloud
-
-* [介绍](spring-cloud/jie-shao.md)
-* [微服务](spring-cloud/wei-fu-wu.md)
-* [yaml vs properties](spring-cloud/yaml-vs-properties.md)
-* Feign
-
-## 微信小程序
-
-* [介绍](wei-xin-xiao-cheng-xu/jie-shao.md)
-* [逻辑层](wei-xin-xiao-cheng-xu/luo-ji-ceng.md)
-* [视图层](wei-xin-xiao-cheng-xu/shi-tu-ceng.md)
+* MAVEN
+  * [介绍](maven-1/jie-shao.md)
+* GIT
+  * [介绍](git-1/jie-shao.md)
+  * [git 设置代理](git-1/git-she-zhi-dai-li.md)
+  * [同一台机器使用多个git账户](git-1/tong-yi-tai-ji-qi-shi-yong-duo-ge-git-zhang-hu.md)
+* DOCKER
+  * [介绍](docker-1/jie-shao.md)
+* REDIS
+  * [介绍](redis-1/jie-shao.md)
+* MQ
+  * [Kafka vs RabbitMQ vs RocketMQ](mq-1/kafka-vs-rabbitmq-vs-rocketmq.md)
+  * [RabbitMQ](mq-1/rabbitmq.md)
+  * [RocketMQ](mq-1/rocketmq.md)
+  * [kafka](mq-1/jie-shao.md)
+  * [LinkedIn日志系统演化](mq-1/linkedin-ri-zhi-xi-tong-yan-hua.md)
+* [HIVE](jie-shao-1.md)
+* [SPRING CLOUD](jie-shao/README.md)
+  * [微服务](jie-shao/wei-fu-wu.md)
+  * [yaml vs properties](jie-shao/yaml-vs-properties.md)
+  * Feign
+* 微信小程序
+  * [介绍](wei-xin-xiao-cheng-xu-1/jie-shao.md)
+  * [逻辑层](wei-xin-xiao-cheng-xu-1/luo-ji-ceng.md)
+  * [视图层](wei-xin-xiao-cheng-xu-1/shi-tu-ceng.md)
 * [NIO](nio/README.md)
   * [Java NIO 教程](nio/java-nio-jiao-cheng.md)
   * [Netty](nio/netty.md)
@@ -169,9 +146,6 @@
   * [Druid](ali/druid.md)
 * 基本概念
   * [Websocket](ji-ben-gai-nian/websocket.md)
-
-## 数据结构
-
-* [介绍](shu-ju-jie-gou/jie-shao.md)
-* [nginx](shu-ju-jie-gou/nginx.md)
+* [数据结构](jie-shao-2.md)
+* [nginx](nginx.md)
 
