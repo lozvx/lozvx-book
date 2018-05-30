@@ -140,6 +140,7 @@
   * [Spring Cloud vs Dubbo](jie-shao/spring-cloud-vs-dubbo.md)
   * [Eureka vs zookeeper](jie-shao/eureka-vs-zookeeper.md)
   * [Eureka vs Consul](jie-shao/eureka-vs-consul.md)
+  * [Consul](jie-shao/consul.md)
 * 微信小程序
   * [介绍](wei-xin-xiao-cheng-xu-1/jie-shao.md)
   * [逻辑层](wei-xin-xiao-cheng-xu-1/luo-ji-ceng.md)
