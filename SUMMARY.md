@@ -36,6 +36,7 @@
     * [Cache](basic-java-1/google-guava/cache.md)
     * [String utilities](basic-java-1/google-guava/string-utilities.md)
     * [Reflection](basic-java-1/google-guava/reflection.md)
+    * [RateLimiter](basic-java-1/google-guava/ratelimiter.md)
   * [JDK8 源码阅读](basic-java-1/jdk8-yuan-ma-yue-du/README.md)
     * [Object](basic-java-1/jdk8-yuan-ma-yue-du/object.md)
     * [String](basic-java-1/jdk8-yuan-ma-yue-du/string.md)
@@ -132,10 +133,12 @@
   * [kafka](mq-1/jie-shao.md)
   * [LinkedIn日志系统演化](mq-1/linkedin-ri-zhi-xi-tong-yan-hua.md)
 * [HIVE](jie-shao-1.md)
-* [SPRING CLOUD](jie-shao/README.md)
+* [Spring Cloud](jie-shao/README.md)
   * [微服务](jie-shao/wei-fu-wu.md)
   * [yaml vs properties](jie-shao/yaml-vs-properties.md)
   * Feign
+  * [Spring Cloud vs Dubbo](jie-shao/spring-cloud-vs-dubbo.md)
+  * [Eureka vs zookeeper](jie-shao/eureka-vs-zookeeper.md)
 * 微信小程序
   * [介绍](wei-xin-xiao-cheng-xu-1/jie-shao.md)
   * [逻辑层](wei-xin-xiao-cheng-xu-1/luo-ji-ceng.md)
@@ -148,6 +151,8 @@
   * [Druid](ali/druid.md)
 * 基本概念
   * [Websocket](ji-ben-gai-nian/websocket.md)
+  * [分布式 vs 集群](ji-ben-gai-nian/fen-bu-shi-vs-ji-qun.md)
+  * [CAP理论](ji-ben-gai-nian/cap-li-lun.md)
 * [数据结构](jie-shao-2.md)
 * [nginx](nginx.md)
 
