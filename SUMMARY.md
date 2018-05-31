@@ -142,7 +142,7 @@
   * [Eureka vs Consul](jie-shao/eureka-vs-consul.md)
   * [Consul](jie-shao/consul.md)
   * [Actuator](jie-shao/actuator.md)
-  * Eureka
+  * [Eureka](jie-shao/eureka.md)
   * [spring-cloud-commons](jie-shao/untitled.md)
   * [RestTemplate](jie-shao/resttemplate.md)
 * 微信小程序
