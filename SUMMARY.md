@@ -135,6 +135,10 @@
 * [HIVE](jie-shao-1.md)
 * [Spring Cloud](jie-shao/README.md)
   * [微服务](jie-shao/wei-fu-wu.md)
+  * [Eureka](jie-shao/eureka.md)
+  * [Hystrix](jie-shao/hystrix/README.md)
+    * [熔断机制 原文](jie-shao/hystrix/rong-duan-ji-zhi-yuan-wen.md)
+    * [熔断机制 译文](jie-shao/hystrix/rong-duan-ji-zhi-yi-wen.md)
   * [yaml vs properties](jie-shao/yaml-vs-properties.md)
   * Feign
   * [Spring Cloud vs Dubbo](jie-shao/spring-cloud-vs-dubbo.md)
@@ -142,7 +146,6 @@
   * [Eureka vs Consul](jie-shao/eureka-vs-consul.md)
   * [Consul](jie-shao/consul.md)
   * [Actuator](jie-shao/actuator.md)
-  * [Eureka](jie-shao/eureka.md)
   * [spring-cloud-commons](jie-shao/untitled.md)
   * [RestTemplate](jie-shao/resttemplate.md)
 * 微信小程序
