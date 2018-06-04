@@ -19,11 +19,11 @@ WebSocket是类似Socket的TCP长连接通讯模式。一旦WebSocket连接建�
 
 
 
-![WebSocket &#x804A;&#x5929;&#x5BA4; demo](../.gitbook/assets/image%20%282%29.png)
+![WebSocket &#x804A;&#x5929;&#x5BA4; demo](../.gitbook/assets/image%20%283%29.png)
 
 
 
-![&#x5FAE;&#x4FE1;web&#x7248;&#x672C;&#x7528;&#x7684;&#x662F;&#x957F;&#x8FDE;&#x63A5;](../.gitbook/assets/image%20%287%29.png)
+![&#x5FAE;&#x4FE1;web&#x7248;&#x672C;&#x7528;&#x7684;&#x662F;&#x957F;&#x8FDE;&#x63A5;](../.gitbook/assets/image%20%288%29.png)
 
 
 
