@@ -142,8 +142,12 @@
     * [熔断机制 译文](jie-shao/hystrix/rong-duan-ji-zhi-yi-wen.md)
   * [Ribbon](jie-shao/ribbon/README.md)
     * [客户端负载均衡](jie-shao/ribbon/ke-hu-duan-fu-zai-jun-heng.md)
-  * [yaml vs properties](jie-shao/yaml-vs-properties.md)
+  * [Archaius](jie-shao/archaius.md)
   * Feign
+    * [Spring Cloud中声明式服务调用Feign](jie-shao/feign/spring-cloud-zhong-sheng-ming-shi-fu-wu-tiao-yong-feign.md)
+    * [Spring Cloud中声明式服务调用Feign](jie-shao/feign/spring-cloud-zhong-sheng-ming-shi-fu-wu-tiao-yong-feign-1.md)
+  * [Zuul](jie-shao/zuul.md)
+  * [yaml vs properties](jie-shao/yaml-vs-properties.md)
   * [Spring Cloud vs Dubbo](jie-shao/spring-cloud-vs-dubbo.md)
   * [Eureka vs zookeeper](jie-shao/eureka-vs-zookeeper.md)
   * [Eureka vs Consul](jie-shao/eureka-vs-consul.md)
