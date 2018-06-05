@@ -134,6 +134,7 @@
   * [LinkedIn日志系统演化](mq-1/linkedin-ri-zhi-xi-tong-yan-hua.md)
 * [HIVE](jie-shao-1.md)
 * [Spring Cloud](jie-shao/README.md)
+  * [参考](jie-shao/can-kao.md)
   * [微服务](jie-shao/wei-fu-wu.md)
   * [Actuator](jie-shao/actuator.md)
   * [Eureka](jie-shao/eureka.md)
