@@ -175,4 +175,8 @@
   * [CAP理论](ji-ben-gai-nian/cap-li-lun.md)
 * [数据结构](jie-shao-2.md)
 * [nginx](nginx.md)
+* [分表分库](fen-biao-fen-ku.md)
+* [缓存](huan-cun/README.md)
+  * [LRU缓存算法](huan-cun/lru-huan-cun-suan-fa.md)
+  * [Redis Vs Memcache](huan-cun/redis-vs-memcache.md)
 
