@@ -179,4 +179,5 @@
 * [缓存](huan-cun/README.md)
   * [LRU缓存算法](huan-cun/lru-huan-cun-suan-fa.md)
   * [Redis Vs Memcache](huan-cun/redis-vs-memcache.md)
+  * [分布式缓存分片的三种模式](huan-cun/fen-bu-shi-huan-cun-fen-pian-de-san-zhong-mo-shi.md)
 

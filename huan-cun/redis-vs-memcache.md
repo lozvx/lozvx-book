@@ -1,5 +1,7 @@
 # Redis Vs Memcache
 
+### FROM 书《可伸缩服务架构-框架与中间件》
+
 ### 1.数据类型
 
 Redis支持5种数据类型。
