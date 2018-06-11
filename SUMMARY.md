@@ -16,7 +16,7 @@
   * [String](basic-java-1/string.md)
   * [final](basic-java-1/final.md)
   * [异常](basic-java-1/yi-chang.md)
-  * [反射](basic-java-1/fan-she.md)
+  * [代理](basic-java-1/fan-she.md)
   * [集合](basic-java-1/ji-he.md)
   * [分布式对象](basic-java-1/fen-bu-shi-dui-xiang.md)
   * [Java新特性](basic-java-1/java-xin-te-xing/README.md)
