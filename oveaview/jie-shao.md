@@ -12,7 +12,7 @@
 
 [http://javarevisited.blogspot.com/\#axzz4zAG9RwRk](http://javarevisited.blogspot.com/#axzz4zAG9RwRk)
 
-[https://www.javacodegeeks.com](https://www.javacodegeeks.com)
+[https://github.com/francistao/LearningNotes](https://github.com/francistao/LearningNotes)
 
 面试相关：
 
