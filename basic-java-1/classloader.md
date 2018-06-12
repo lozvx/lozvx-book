@@ -1,6 +1,6 @@
 # ClassLoader
 
-#### BootstapClassLoader
+#### ClassBootstapClassLoader
 
 称为启动类加载器，是Java类加载层次中最顶层的类加载器，**负责加载JDK中的核心类库，如：rt.jar、resources.jar、charsets.jar等**
 
@@ -13,4 +13,10 @@
 称为系统类加载器，负责加载应用程序classpath目录下的所有jar和class文件。一般来说，Java 应用的类都是由它来完成加载的。可以通过 `ClassLoader.getSystemClassLoader()`来获取它。
 
 
+
+
+
+ClassNotFoundException
+
+NoClassDefFoundError
 
