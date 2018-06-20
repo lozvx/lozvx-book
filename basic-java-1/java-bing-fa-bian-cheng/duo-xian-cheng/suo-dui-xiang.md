@@ -1,5 +1,11 @@
 # 锁对象
 
+[http://thinkinjava.cn/article/36](http://thinkinjava.cn/article/36)
+
+**公平锁和非公平锁**
+
+大多数情况下，为了效率，锁都是不公平的。系统在选择锁的时候都是随机的，不会按照某种顺序，比如时间顺序，公平锁的一大特点：他不会产生饥饿现象。只要你排队 ，最终还是可以得到资源的。如果我们使用 synchronized ，得到的锁就是不公平的。因此，这也是重入锁比 synchronized 强大的一个优势。我们同样写个例子：
+
 ReentrantLock类： 可重入锁
 
 ```java
