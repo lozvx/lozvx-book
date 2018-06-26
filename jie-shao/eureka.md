@@ -43,10 +43,7 @@ InstanceInfo instance = discoveryClient.getNextServerFromEureka("EUREKA-PRODUCER
 
 ```text
 
-@Autowiredprivate DiscoveryClient discoveryClient;
-public String serviceUrl() {    List<ServiceInstance> list = discoveryClient.getInstances("STORES");    if (list != null && list.size() > 0 ) {
-        return list.get(0).getUri();    }
-    return null;}
+@Autowiredprivate DiscoveryClient discoveryClient;public String serviceUrl() {    List<ServiceInstance> list = discoveryClient.getInstances("STORES");    if (list != null && list.size() > 0 ) {        return list.get(0).getUri();    }    return null;}
 ```
 
 
@@ -64,15 +61,6 @@ server:  port: 8761  instance:  hostname: localhostclient:  registerWithEureka: 
 
 ```javascript
 
---- spring:
-  profiles: peer1eureka:
-  instance:    hostname: peer1
-  client:    serviceUrl:
-      defaultZone: http://peer2/eureka/
---- spring:
-  profiles: peer2eureka:
-  instance:    hostname: peer2
-  client:    serviceUrl:
-      defaultZone: http://peer1/eureka/
+--- spring:  profiles: peer1eureka:  instance:    hostname: peer1  client:    serviceUrl:      defaultZone: http://peer2/eureka/--- spring:  profiles: peer2eureka:  instance:    hostname: peer2  client:    serviceUrl:      defaultZone: http://peer1/eureka/
 ```
 

@@ -47,6 +47,7 @@
     * [HashMap](basic-java-1/jdk8-yuan-ma-yue-du/hashmap.md)
     * [HashSet](basic-java-1/jdk8-yuan-ma-yue-du/hashset.md)
     * [TreeMap](basic-java-1/jdk8-yuan-ma-yue-du/treemap.md)
+    * [Atomic原子类](basic-java-1/jdk8-yuan-ma-yue-du/atomic-yuan-zi-lei.md)
   * [Java并发编程](basic-java-1/java-bing-fa-bian-cheng/README.md)
     * [多线程](basic-java-1/java-bing-fa-bian-cheng/duo-xian-cheng/README.md)
       * [锁对象](basic-java-1/java-bing-fa-bian-cheng/duo-xian-cheng/suo-dui-xiang.md)
