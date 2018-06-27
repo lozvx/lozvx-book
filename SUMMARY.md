@@ -177,6 +177,7 @@
   * [Websocket](ji-ben-gai-nian/websocket.md)
   * [分布式 vs 集群](ji-ben-gai-nian/fen-bu-shi-vs-ji-qun.md)
   * [CAP理论](ji-ben-gai-nian/cap-li-lun.md)
+  * [跨域访问](ji-ben-gai-nian/kua-yu-fang-wen.md)
 * [数据结构](jie-shao-2/README.md)
   * [二叉树](jie-shao-2/er-cha-shu.md)
 * [nginx](nginx.md)
