@@ -63,6 +63,7 @@
     * [阻塞队列](basic-java-1/java-bing-fa-bian-cheng/zu-sai-dui-lie.md)
     * [多线程面试问题](basic-java-1/java-bing-fa-bian-cheng/duo-xian-cheng-mian-shi-wen-ti.md)
     * [AQS](basic-java-1/java-bing-fa-bian-cheng/aqs.md)
+    * [自旋锁](basic-java-1/java-bing-fa-bian-cheng/zi-xuan-suo.md)
   * [Lombok](basic-java-1/lombok.md)
   * [排序](basic-java-1/pai-xu.md)
   * [Best Practice](basic-java-1/best-practice/README.md)
