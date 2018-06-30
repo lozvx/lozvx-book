@@ -17,7 +17,7 @@
 * Timed waiting（计时等待）
 * Terminated（被终止）
 
-![](../../../.gitbook/assets/threadstate.png)
+![](../../.gitbook/assets/threadstate.png)
 
 **实现Runnable接口比继承Thread类所具有的优势：**
 
