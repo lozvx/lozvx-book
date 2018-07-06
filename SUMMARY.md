@@ -12,6 +12,7 @@
   * [Redis](linux-1/redis.md)
   * [IDEA](linux-1/idea.md)
   * [macOS](linux-1/macos.md)
+  * [Gradle](linux-1/gradle.md)
 * [Basic Java](basic-java-1/README.md)
   * [基础知识](basic-java-1/ji-chu-zhi-shi.md)
   * [String](basic-java-1/string.md)
