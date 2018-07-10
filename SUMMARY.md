@@ -189,6 +189,7 @@
   * [跨域访问](ji-ben-gai-nian/kua-yu-fang-wen.md)
 * [数据结构](jie-shao-2/README.md)
   * [二叉树](jie-shao-2/er-cha-shu.md)
+  * [B-Tree](jie-shao-2/b-tree.md)
 * [nginx](nginx.md)
 * [分表分库](fen-biao-fen-ku.md)
 * [缓存](huan-cun/README.md)
