@@ -50,3 +50,21 @@ Loaded java.lang.Object from C:\Program Files\Java\jdk1.8.0_172\jre\lib\rt.jar]
 [Loaded java.lang.Error from C:\Program Files\Java\jdk1.8.0_172\jre\lib\rt.jar
 ```
 
+
+
+堆：
+
+新生代，Young区又分为Eden区和两个Survivor区。
+
+所有新创建的对象都在Eden区，当Eden区满后会触发minor GC，将Eden区仍然存活的对象复制到其中一个Survivor区，另外一个Survivor区中存活对象也复制到这个Survivor区中。以保证始终有一个Survivor区是空的。
+
+老年代，old区
+
+old区存放的是Young区的Survivor满后触发monor GC后仍然存活的对象，当Eden区满后会将对象存放到Survivor区，如果Survivor区仍然存不下这些对象，GC收集器会将这些对象直接存放到old区。如果在Survivor区中的对象足够老，也直接存放到old区。如果old区满了，将会触发Full GC,回收整个堆内存。
+
+永久代，Perm区（永久代不在堆中，1.8已经把永久代删除，替换为元数据，metaspace）
+
+Perm区存放的主要是类的class对象，如果一个类被频繁的加载，也可能会导致Perm区满，perm区的 垃圾回收也由Full GC触发。
+
+
+
