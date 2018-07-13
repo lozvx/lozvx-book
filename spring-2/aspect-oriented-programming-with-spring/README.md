@@ -37,7 +37,7 @@ Spring AOP 也能用CGLIB代理，在一个类没有实现一个接口时，会�
 </aop:config>
 ```
 
-AspectJ
+引入AspectJ的注解
 
 ```text
 <aop:aspectj-autoproxy proxy-target-class="true"/>
