@@ -2,7 +2,10 @@
 
 参考：[http://www.cnblogs.com/lwbqqyumidi/p/3513047.html](http://www.cnblogs.com/lwbqqyumidi/p/3513047.html)
 
-final修饰finalfin量时：final修饰变量时final变量时：final修饰变final修饰变量时final量时fin量时：final修饰变量时final变量时：final修饰变final修饰变量时final修饰变量final修饰finalfin量时：final修饰变量时final变量时：final修饰变final修饰变量时final量时fin量时：final修饰变量时final变量时：final修饰变final修饰变量时final修饰变量
+
+
+final可以用来修饰变量（包括类属性、对象属性、局部变量和形参）、方法（包括类方法和对象方法）和类。  
+
 
 * 修饰变量
 
