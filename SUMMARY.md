@@ -202,7 +202,8 @@
 * [Dubbo](dubbo.md)
 * [面试相关](mian-shi-xiang-guan/README.md)
   * [基础](mian-shi-xiang-guan/ji-chu.md)
-* [JVM](jvm.md)
+* [JVM](jvm/README.md)
+  * [GC](jvm/gc.md)
 * [Servlet](servlet.md)
 * [计算机网络](ji-suan-ji-wang-luo.md)
 
