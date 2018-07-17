@@ -48,3 +48,22 @@ TreeSize
 
 Everywhere
 
+
+
+rabbitmq：
+
+docker启动
+
+```text
+sudo docker pull docker.io/rabbitmq 
+sudo docker run -d --name myrabbitmq -p 5673:5672 -p 15673:15672 docker.io/rabbitmq:latest
+```
+
+ssh：
+
+开启ssh服务
+
+```text
+ sudo apt-get install openssh-server
+```
+
