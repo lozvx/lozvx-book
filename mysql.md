@@ -18,3 +18,9 @@ sudo docker run --name lozvx -e MYSQL_ROOT_PASSWORD=password -d mysql:5.7
 
 
 
+客户端
+
+ [DBeaver](https://dbeaver.io/)
+
+
+

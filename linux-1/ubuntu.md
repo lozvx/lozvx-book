@@ -48,7 +48,7 @@ TreeSize
 
 Everywhere
 
-
+dbeaver：DB客户端
 
 rabbitmq：
 
