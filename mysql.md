@@ -11,21 +11,29 @@ Docker
 [https://store.docker.com/images/mysql/](https://store.docker.com/images/mysql/)
 
 ```text
-docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
-or
-sudo docker run --name lozvx -e MYSQL_ROOT_PASSWORD=password -d mysql:5.7
+#未挂载volume
+sudo docker run --name mysql -e MYSQL_ROOT_PASSWORD=password -d mysql:5.7
+
+#挂载volume，持久化数据
+sudo docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -d -v /home/lozvx/mysqldata:/var/lib/mysql mysql:5.7
 ```
 
 连接：
 
 ```text
-sudo docker exec -it lozvx mysql -uroot -ppassword
+sudo docker exec -it mysql mysql -uroot -ppassword
 
 # 进入之后，要对用户进行授权，否则用navicat连接不上。
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'172.21.40.209' IDENTIFIED BY 'password';
 flush privileges;
+```
+
+建库:
+
+```text
+create database lozvx;
 ```
 
 客户端
