@@ -32,6 +32,9 @@ Sending messages to many consumers at once
 
 5.Topics
 
+* \* \(star\) can substitute for exactly one word.
+* \# \(hash\) can substitute for zero or more words.
+
 6.RPC
 
 
