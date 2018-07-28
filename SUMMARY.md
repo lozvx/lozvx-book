@@ -136,6 +136,7 @@
   * [介绍](git-1/jie-shao.md)
   * [git 设置代理](git-1/git-she-zhi-dai-li.md)
   * [同一台机器使用多个git账户](git-1/tong-yi-tai-ji-qi-shi-yong-duo-ge-git-zhang-hu.md)
+  * [git修改已提交的Commter信息](git-1/git-xiu-gai-yi-ti-jiao-de-commter-xin-xi.md)
 * [DOCKER](docker-1/README.md)
   * [介绍](docker-1/jie-shao.md)
 * [REDIS](redis-1/README.md)
