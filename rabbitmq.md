@@ -1,6 +1,10 @@
 # RabbitMQ
 
-[http://www.rabbitmq.com/getstarted.html](http://www.rabbitmq.com/getstarted.html)
+{% embed data="{\"url\":\"http://www.rabbitmq.com/getstarted.html\",\"type\":\"link\",\"title\":\"RabbitMQ - Getting started with RabbitMQ\"}" %}
+
+[https://blog.csdn.net/column/details/rabbitmq.html](https://blog.csdn.net/column/details/rabbitmq.html)
+
+[https://blog.csdn.net/column/details/slimina-rabbitmq.html](https://blog.csdn.net/column/details/slimina-rabbitmq.html)
 
   
 A _producer_ is a user application that sends messages.
@@ -8,6 +12,16 @@ A _producer_ is a user application that sends messages.
 A _queue_ is a buffer that stores messages.
 
 A _consumer_ is a user application that receives messages.
+
+
+
+三个概念：
+
+ **Exchanges** are where producers publish their messages.
+
+ **Queues**are where the messages end up and are received by consumers
+
+ **Bindings** are how the messages get routed from the exchange to particular queues.
 
 RabbitMQ的消息模型是生产者不会直接发送消息到Queue。事实上，生产者都不会知道消息会被传递到Queue。相反，生产者只会发送消息到Exchange。Exchange是个 很简单的东西，一方面，它从生产者接受消息，另一方面，它推送消息到Queue。Exchange必须清楚的知道怎么处理收到的消息。是发送到一个Queue还是多个Queues，还是直接丢掉。这些规则都是由Exchange Type定义。
 
