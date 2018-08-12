@@ -101,13 +101,13 @@ You can load YAML using two ways in spring application,
 1. Using Java Configuration class
 
 | 12345678 | `@Bean  public` `static` `PropertySourcesPlaceholderConfigurer properties() {      PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer =` `new` `PropertySourcesPlaceholderConfigurer();      YamlPropertiesFactoryBean yaml =` `new` `YamlPropertiesFactoryBean();      yaml.setResources(new` `ClassPathResource("appConfig.yml");      propertySourcesPlaceholderConfigurer.setProperties(yaml.getObject());      return` `propertySourcesPlaceholderConfigurer;  }` |
-| --- |
+| :--- | :--- |
 
 
 2. Using XML bean configuration
 
 | 1234567 | `<context:annotation-config/>` `<bean` `id="yamlProperties"` `class="org.springframework.beans.factory.config.YamlPropertiesFactoryBean">    <property` `name="resources"` `value="classpath:appConfig.yml"/></bean>` `<context:property-placeholder` `properties-ref="yamlProperties"/>` |
-| --- |
+| :--- | :--- |
 
 
 **Is there any YAML editor available ?**

@@ -58,7 +58,7 @@ zuul.ignored-services=hello-service
 有的小伙伴可能为有疑问，我们定义路由规则`/api-a/**`的时候，为什么最后面是两个\*，一个可不可以呢？当然可以，不过意义可就不一样了，Zuul中的路由匹配规则使用了Ant风格定义，一共有三种不同的通配符：
 
 | 通配符 | 含义 | 举例 | 解释 |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | ? | 匹配任意单个字符 | /feign-consumer/? | 匹配/feign-consumer/a,/feign-consumer/b,/feign-consumer/c等 |
 | \* | 匹配任意数量的字符 | /feign-consumer/\* | 匹配/feign-consumer/aaa,feign-consumer/bbb,/feign-consumer/ccc等，无法匹配/feign-consumer/a/b/c |
 | \*\* | 匹配任意数量的字符 | /feign-consumer/\* | 匹配/feign-consumer/aaa,feign-consumer/bbb,/feign-consumer/ccc等，也可以匹配/feign-consumer/a/b/c |
