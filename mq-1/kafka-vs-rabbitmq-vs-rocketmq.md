@@ -2,7 +2,7 @@
 
 参考：
 
-{% embed data="{\"url\":\"http://jm.taobao.org/2016/04/01/kafka-vs-rabbitmq-vs-rocketmq-message-send-performance/\",\"type\":\"link\",\"title\":\"Kafka、RabbitMQ、RocketMQ消息中间件的对比 —— 消息发送性能\",\"description\":\"引言分布式系统中,我们广泛运用消息中间件进行系统间的数据交换,便于异步解耦。现在开源的消息中间件有很多,前段时间我们自家的产品 RocketMQ \(MetaQ的内核\) 也顺利开源,得到大家的关注。 那么,消息中间件性能究竟哪家强? 带着这个疑问,我们中间件测试组对常见的三类消息产品\(Kafka、RabbitMQ、RocketMQ\)做了性能比较。 Kafka是LinkedIn开源的分布式发布-订阅消\",\"icon\":{\"type\":\"icon\",\"url\":\"http://jm.taobao.org/favicon.ico?v=5.0.1\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"http://img3.tbcdn.cn/5476e8b07b923/TB1GzuAOFXXXXXGXFXXXXXXXXXX\",\"width\":594,\"height\":151,\"aspectRatio\":0.2542087542087542}}" %}
+{% embed url="http://jm.taobao.org/2016/04/01/kafka-vs-rabbitmq-vs-rocketmq-message-send-performance/" %}
 
 
 

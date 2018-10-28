@@ -22,7 +22,7 @@ nginx 命令：
 
 #### 给Nginx配置一个自签名的SSL证书
 
-{% embed data="{\"url\":\"https://github.com/michaelliao/itranswarp.js/blob/master/conf/ssl/gencert.sh\",\"type\":\"link\",\"title\":\"michaelliao/itranswarp.js\",\"description\":\"itranswarp.js - Full-featured CMS including blog, wiki, discussion, etc. powered by Nodejs.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://github.com/fluidicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://avatars0.githubusercontent.com/u/470058?s=400&v=4\",\"width\":400,\"height\":400,\"aspectRatio\":1}}" %}
+{% embed url="https://github.com/michaelliao/itranswarp.js/blob/master/conf/ssl/gencert.sh" %}
 
 ```bash
 

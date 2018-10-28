@@ -4,7 +4,7 @@
 
 [http://www.ityouknow.com/springcloud/2017/05/01/simple-springcloud.html](http://www.ityouknow.com/springcloud/2017/05/01/simple-springcloud.html)
 
-### Spring Cloud Netflix {#spring-cloud-netflix}
+### Spring Cloud Netflix <a id="spring-cloud-netflix"></a>
 
 这可是个大boss，地位仅次于老大，老大各项服务依赖与它，与各种Netflix OSS组件集成，组成微服务的核心，它的小弟主要有Eureka, Hystrix, Zuul, Archaius… 太多了
 
@@ -24,33 +24,33 @@ Zuul 是在云平台上提供动态路由,监控,弹性,安全等边缘服务的
 
 配置管理API，包含一系列配置管理API，提供动态类型化属性、线程安全配置操作、轮询框架、回调机制等功能。可以实现动态获取配置， 原理是每隔60s（默认，可配置）从配置源读取一次内容，这样修改了配置文件后不需要重启服务就可以使修改后的内容生效，前提使用archaius的API来读取。
 
-### Spring Cloud Config {#spring-cloud-config}
+### Spring Cloud Config <a id="spring-cloud-config"></a>
 
 俗称的配置中心，配置管理工具包，让你可以把配置放到远程服务器，集中化管理集群配置，目前支持本地存储、Git以及Subversion。就是以后大家武器、枪火什么的东西都集中放到一起，别随便自己带，方便以后统一管理、升级装备。
 
-### Spring Cloud Bus {#spring-cloud-bus}
+### Spring Cloud Bus <a id="spring-cloud-bus"></a>
 
 事件、消息总线，用于在集群（例如，配置变化事件）中传播状态变化，可与Spring Cloud Config联合实现热部署。相当于水浒传中日行八百里的神行太保戴宗，确保各个小弟之间消息保持畅通。
 
-### Spring Cloud for Cloud Foundry {#spring-cloud-for-cloud-foundry}
+### Spring Cloud for Cloud Foundry <a id="spring-cloud-for-cloud-foundry"></a>
 
 Cloud Foundry是VMware推出的业界第一个开源PaaS云平台，它支持多种框架、语言、运行时环境、云平台及应用服务，使开发人员能够在几秒钟内进行应用程序的部署和扩展，无需担心任何基础架构的问题
 
 其实就是与CloudFoundry进行集成的一套解决方案，抱了Cloud Foundry的大腿。
 
-### Spring Cloud Cluster {#spring-cloud-cluster}
+### Spring Cloud Cluster <a id="spring-cloud-cluster"></a>
 
 Spring Cloud Cluster将取代Spring Integration。提供在分布式系统中的集群所需要的基础功能支持，如：选举、集群的状态一致性、全局锁、tokens等常见状态模式的抽象和实现。
 
 如果把不同的帮派组织成统一的整体，Spring Cloud Cluster已经帮你提供了很多方便组织成统一的工具。
 
-### Spring Cloud Consul {#spring-cloud-consul}
+### Spring Cloud Consul <a id="spring-cloud-consul"></a>
 
 Consul 是一个支持多数据中心分布式高可用的服务发现和配置共享的服务软件,由 HashiCorp 公司用 Go 语言开发, 基于 Mozilla Public License 2.0 的协议进行开源. Consul 支持健康检查,并允许 HTTP 和 DNS 协议调用 API 存储键值对.
 
 Spring Cloud Consul 封装了Consul操作，consul是一个服务发现与配置工具，与Docker容器可以无缝集成。
 
-## 其它小弟 {#其它小弟}
+## 其它小弟 <a id="&#x5176;&#x5B83;&#x5C0F;&#x5F1F;"></a>
 
 **Spring Cloud Security**
 

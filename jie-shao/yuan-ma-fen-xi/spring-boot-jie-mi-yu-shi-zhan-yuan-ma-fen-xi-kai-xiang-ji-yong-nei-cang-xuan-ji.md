@@ -12,7 +12,7 @@
 
 Spring Boot提供了很多”开箱即用“的依赖模块，那么，Spring Boot 如何巧妙的做到开箱即用，自动配置的呢？
 
-### 开箱即用，内藏玄机 {#开箱即用，内藏玄机}
+### 开箱即用，内藏玄机 <a id="&#x5F00;&#x7BB1;&#x5373;&#x7528;&#xFF0C;&#x5185;&#x85CF;&#x7384;&#x673A;"></a>
 
 Spring Boot提供了很多”开箱即用“的依赖模块，都是以spring-boot-starter-xx作为命名的。例如，之前提到的 spring-boot-starter-redis、spring-boot-starter-data-mongodb、spring-boot-starter-data-elasticsearch 等。
 
@@ -50,11 +50,11 @@ Spring Boot 的开箱即用是一个很棒的设计，给开发者带来很大�
 
 Spring Boot 内部提供了很多自动化配置的类，例如，RedisAutoConfiguration 、MongoRepositoriesAutoConfiguration 、ElasticsearchAutoConfiguration ， 这些自动化配置的类会判断 classpath 中是否存在自己需要的那个类，如果存在则会自动配置相关的配置，否则就不会自动配置，因此，开发者在 Maven 的 pom 文件中添加相关依赖后，这些依赖就会下载很多 jar 包到 classpath 中，有了这些 lib 就会触发自动化配置，所以，我们就能很便捷地使用对于的模块功能了。
 
-### 总结 {#总结}
+### 总结 <a id="&#x603B;&#x7ED3;"></a>
 
 Spring Boot 如何巧妙的做到开箱即用，自动配置的呢？实际上，Spring Boot 内部提供了很多自动化配置的类这些自动化配置的类会判断 classpath 中是否存在自己需要的那个类，如果存在则会自动配置相关的配置，否则就不会自动配置，因此，开发者在 Maven 的 pom 文件中添加相关依赖后，这些依赖就会下载很多 jar 包到 classpath 中，有了这些 lib 就会触发自动化配置。
 
-### 源代码 {#源代码}
+### 源代码 <a id="&#x6E90;&#x4EE3;&#x7801;"></a>
 
 > 相关示例完整代码： [springboot-action](https://github.com/lianggzone/springboot-action)
 

@@ -1,6 +1,6 @@
 # 注解
 
-{% embed data="{\"url\":\"https://www.jianshu.com/p/28edf5352b63\",\"type\":\"link\",\"title\":\"Java:Annotation\(注解\)--原理到案例\",\"description\":\"本文章涉及代码已放到github上annotation-study 1.Annotation为何而来 What：Annotation干嘛的 JDK5开始，java增加了对元数据\(MetaData...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://cdn2.jianshu.io/assets/apple-touch-icons/152-bf209460fc1c17bfd3e2b84c8e758bc11ca3e570fd411c3bbd84149b97453b99.png\",\"width\":152,\"height\":152,\"aspectRatio\":1}}" %}
+{% embed url="https://www.jianshu.com/p/28edf5352b63" %}
 
 ![](../../.gitbook/assets/image%20%2818%29.png)
 

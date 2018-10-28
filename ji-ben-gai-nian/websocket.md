@@ -2,9 +2,9 @@
 
 参考：
 
-{% embed data="{\"url\":\"https://zh.wikipedia.org/wiki/WebSocket\",\"type\":\"link\",\"title\":\"WebSocket\",\"description\":\"WebSocket是一种在单个TCP连接上进行全双工通讯的协议。WebSocket通訊協定於2011年被IETF定為標準RFC 6455，并由RFC7936补充规范。WebSocket API也被W3C定為標準。\",\"icon\":{\"type\":\"icon\",\"url\":\"https://zh.wikipedia.org/static/apple-touch/wikipedia.png\",\"aspectRatio\":0}}" %}
+{% embed url="https://zh.wikipedia.org/wiki/WebSocket" %}
 
-{% embed data="{\"url\":\"https://www.zhihu.com/question/20215561\",\"type\":\"link\",\"title\":\"WebSocket 是什么原理？为什么可以实现持久连接？ - 知乎\",\"icon\":{\"type\":\"icon\",\"url\":\"https://static.zhihu.com/static/favicon.ico\",\"aspectRatio\":0}}" %}
+{% embed url="https://www.zhihu.com/question/20215561" %}
 
 
 

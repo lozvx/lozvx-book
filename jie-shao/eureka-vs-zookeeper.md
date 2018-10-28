@@ -1,20 +1,20 @@
 # Eureka vs zookeeper
 
-{% embed data="{\"url\":\"https://blog.csdn.net/neosmith/article/details/53131023\",\"type\":\"link\",\"title\":\"Spring Cloud Netflix Eureka源码导读与原理分析 - CSDN博客\",\"description\":\"Spring Cloud Netflix技术栈中，Eureka作为服务注册中心对整个微服务架构起着最核心的整合作用，因此对Eureka还是有很大的必要进行深入研究。本文主要分为三部分，一是对项目构建的简要说明；二是对程序入口点的定位，帮助大家找到阅读源码的起点；三是对Eureka实现机制的分析；四是与使用Zookeeper相比Eureka作为注册服务的区别。1. 源码1.1 源码获取、构建我们需要分\",\"icon\":{\"type\":\"icon\",\"url\":\"https://csdnimg.cn/public/favicon.ico\",\"aspectRatio\":0}}" %}
+{% embed url="https://blog.csdn.net/neosmith/article/details/53131023" %}
 
 Spring Cloud Netflix技术栈中，Eureka作为服务注册中心对整个微服务架构起着最核心的整合作用，因此对Eureka还是有很大的必要进行深入研究。
 
 本文主要分为四部分，一是对项目构建的简要说明；二是对程序入口点的定位，帮助大家找到阅读源码的起点；三是对Eureka实现机制的分析；四是与使用Zookeeper相比Eureka作为注册服务的区别。
 
-## 1. 源码 {#1-源码}
+## 1. 源码 <a id="1-&#x6E90;&#x7801;"></a>
 
-### 1.1 源码获取、构建 {#11-源码获取构建}
+### 1.1 源码获取、构建 <a id="11-&#x6E90;&#x7801;&#x83B7;&#x53D6;&#x6784;&#x5EFA;"></a>
 
 我们需要分别下载 Eureka 官方源码和 Spring Cloud Netflix 适配 Eureka 的代码。可以在 [https://github.com/Netflix/eureka](https://github.com/Netflix/eureka) 下载到原生 Eureka 代码，在 [https://github.com/spring-cloud/spring-cloud-netflix/tree/v1.2.2.RELEASE](https://github.com/spring-cloud/spring-cloud-netflix/tree/v1.2.2.RELEASE) 下载Spring Cloud针对于Eureka的Spring Cloud适配。
 
 在构建 Eureka 官方源码时一定要使用项目里自带的`gradlew`而不要自行下载gradle\(首先要科学上网\), 因为gradle早已更新到3.X版本，而Eureka用的是2.1.0版本构建的项目，新版本构建时会报错。Spring Cloud Netflix构建起来很简单，执行 `mvn clean package`，耐心等待即可。（我机器上是12分钟）
 
-### 1.2 程序构成 {#12-程序构成}
+### 1.2 程序构成 <a id="12-&#x7A0B;&#x5E8F;&#x6784;&#x6210;"></a>
 
 Eureka:   
 1. 是纯正的 servlet 应用，需构建成war包部署   
@@ -23,7 +23,7 @@ Eureka:
 4. 定时任务\(发送心跳、定时清理过期服务、节点同步等\)通过 JDK 自带的 `Timer` 实现   
 5. 内存缓存使用Google的guava包实现
 
-### 1.3 代码结构 {#13-代码结构}
+### 1.3 代码结构 <a id="13-&#x4EE3;&#x7801;&#x7ED3;&#x6784;"></a>
 
 模块概览：   
 ![&#x8FD9;&#x91CC;&#x5199;&#x56FE;&#x7247;&#x63CF;&#x8FF0;](https://img-blog.csdn.net/20161111180316214)
@@ -42,9 +42,9 @@ Eureka客户端，微服务通过该客户端与Eureka进行通讯，屏蔽了�
 eureka-server模块:   
 包含了 servlet 应用的基本配置，如 web.xml。构建成功后在该模块下会生成可部署的war包。
 
-## 2. 代码入口 {#2-代码入口}
+## 2. 代码入口 <a id="2-&#x4EE3;&#x7801;&#x5165;&#x53E3;"></a>
 
-### 2.1 作为纯Servlet应用的入口 {#21-作为纯servlet应用的入口}
+### 2.1 作为纯Servlet应用的入口 <a id="21-&#x4F5C;&#x4E3A;&#x7EAF;servlet&#x5E94;&#x7528;&#x7684;&#x5165;&#x53E3;"></a>
 
 由于是Servlet应用，所以Eureka需要通过servlet的相关监听器 `ServletContextListener` 嵌入到 Servlet 的生命周期中。`EurekaBootStrap` 类实现了该接口，在servlet标准的`contextInitialized()`方法中完成了初始化工作：
 
@@ -67,7 +67,7 @@ eureka-server模块:
     }12345678910111213141516
 ```
 
-### 2.2 与Spring Cloud结合的胶水代码 {#22-与spring-cloud结合的胶水代码}
+### 2.2 与Spring Cloud结合的胶水代码 <a id="22-&#x4E0E;spring-cloud&#x7ED3;&#x5408;&#x7684;&#x80F6;&#x6C34;&#x4EE3;&#x7801;"></a>
 
 Eureka是一个纯正的Servlet应用，而Spring Boot使用的是嵌入式Tomcat, 因此就需要一定的胶水代码让Eureka跑在Embedded Tomcat中。这部分工作是在 `EurekaServerBootstrap` 中完成的。与上面提到的`EurekaBootStrap`相比，它的代码几乎是直接将原生代码copy过来的，虽然它并没有继承 `ServletContextListener`, 但是相应的生命周期方法都还在，然后添加了`@Configuration`注解使之能被Spring容器感知：
 
@@ -116,16 +116,16 @@ eurekaServerBootstrap.contextInitialized(EurekaServerInitializerConfiguration.th
     }123456789101112131415161718
 ```
 
-### 2.3 其它几个重要的代码入口 {#23-其它几个重要的代码入口}
+### 2.3 其它几个重要的代码入口 <a id="23-&#x5176;&#x5B83;&#x51E0;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x4EE3;&#x7801;&#x5165;&#x53E3;"></a>
 
 了解以上入口信息后，我们就可以根据自己的需要自行研读相关的代码了。这里再提示几个代码入口：   
 1. `com.netflix.appinfo.InstanceInfo`类封装了服务注册所需的全部信息   
 2. Eureka Client探测本机IP是通过`org.springframework.cloud.commons.util.InetUtils`工具类实现的   
 3. `com.netflix.eureka.resources.ApplicationResource`类相当于Spring MVC中的控制器，是服务的注册、查询功能的代码入口点
 
-## 3. 可能会被坑的几处原理 {#3-可能会被坑的几处原理}
+## 3. 可能会被坑的几处原理 <a id="3-&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x5751;&#x7684;&#x51E0;&#x5904;&#x539F;&#x7406;"></a>
 
-### 3.1 Eureka的几处缓存 {#31-eureka的几处缓存}
+### 3.1 Eureka的几处缓存 <a id="31-eureka&#x7684;&#x51E0;&#x5904;&#x7F13;&#x5B58;"></a>
 
 Eureka的wiki上有一句话，大意是一个服务启动后最长可能需要2分钟时间才能被其它服务感知到，但是文档并没有解释为什么会有这2分钟。其实这是由三处缓存 + 一处延迟造成的。
 
@@ -159,7 +159,7 @@ if (payLoad != null) {
 
 以上这四个30秒正是官方wiki上写服务注册最长需要2分钟的原因。
 
-### 3.2 服务注册信息不会被二次传播 {#32-服务注册信息不会被二次传播}
+### 3.2 服务注册信息不会被二次传播 <a id="32-&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x4FE1;&#x606F;&#x4E0D;&#x4F1A;&#x88AB;&#x4E8C;&#x6B21;&#x4F20;&#x64AD;"></a>
 
 **如果Eureka A的peer指向了B, B的peer指向了C，那么当服务向A注册时，B中会有该服务的注册信息，但是C中没有**。也就是说，如果你希望只要向一台Eureka注册其它所有实例都能得到注册信息，那么就必须把其它所有节点都配置到当前Eureka的`peer`属性中。这一逻辑是在`PeerAwareInstanceRegistryImpl#replicateToPeers()`方法中实现的：
 
@@ -190,21 +190,21 @@ private void replicateToPeers(Action action, String appName, String id,
     }123456789101112131415161718192021222324
 ```
 
-### 3.3 多网卡环境下的IP选择问题 {#33-多网卡环境下的ip选择问题}
+### 3.3 多网卡环境下的IP选择问题 <a id="33-&#x591A;&#x7F51;&#x5361;&#x73AF;&#x5883;&#x4E0B;&#x7684;ip&#x9009;&#x62E9;&#x95EE;&#x9898;"></a>
 
 如果服务部署的机器上安装了多块网卡，它们分别对应IP地址A, B, C，此时：   
 Eureka会**选择IP合法**\(标准ipv4地址\)、**索引值最小**\(eth0, eth1中eth0优先\)且**不在忽略列表中**\(可在`application.properites`中配置忽略哪些网卡\)的网卡地址作为服务IP。   
 这个坑的详细分析见：[http://blog.csdn.net/neosmith/article/details/53126924](http://blog.csdn.net/neosmith/article/details/53126924)
 
-## 4. 作为服务注册中心，Eureka比Zookeeper好在哪里 {#4-作为服务注册中心eureka比zookeeper好在哪里}
+## 4. 作为服务注册中心，Eureka比Zookeeper好在哪里 <a id="4-&#x4F5C;&#x4E3A;&#x670D;&#x52A1;&#x6CE8;&#x518C;&#x4E2D;&#x5FC3;eureka&#x6BD4;zookeeper&#x597D;&#x5728;&#x54EA;&#x91CC;"></a>
 
 著名的CAP理论指出，一个分布式系统不可能同时满足C\(一致性\)、A\(可用性\)和P\(分区容错性\)。由于分区容错性在是分布式系统中必须要保证的，因此我们只能在A和C之间进行权衡。在此Zookeeper保证的是CP, 而Eureka则是AP。
 
-### 4.1 Zookeeper保证CP {#41-zookeeper保证cp}
+### 4.1 Zookeeper保证CP <a id="41-zookeeper&#x4FDD;&#x8BC1;cp"></a>
 
 当向注册中心查询服务列表时，我们可以容忍注册中心返回的是几分钟以前的注册信息，但不能接受服务直接down掉不可用。也就是说，服务注册功能对可用性的要求要高于一致性。但是zk会出现这样一种情况，当master节点因为网络故障与其他节点失去联系时，剩余节点会重新进行leader选举。问题在于，选举leader的时间太长，30 ~ 120s, 且选举期间整个zk集群都是不可用的，这就导致在选举期间注册服务瘫痪。在云部署的环境下，因网络问题使得zk集群失去master节点是较大概率会发生的事，虽然服务能够最终恢复，但是漫长的选举时间导致的注册长期不可用是不能容忍的。
 
-### 4.2 Eureka保证AP {#42-eureka保证ap}
+### 4.2 Eureka保证AP <a id="42-eureka&#x4FDD;&#x8BC1;ap"></a>
 
 Eureka看明白了这一点，因此在设计时就优先保证可用性。Eureka各个节点都是平等的，几个节点挂掉不会影响正常节点的工作，剩余的节点依然可以提供注册和查询服务。而Eureka的客户端在向某个Eureka注册或时如果发现连接失败，则会自动切换至其它节点，只要有一台Eureka还在，就能保证注册服务可用\(保证可用性\)，只不过查到的信息可能不是最新的\(不保证强一致性\)。除此之外，Eureka还有一种自我保护机制，如果在15分钟内超过85%的节点都没有正常的心跳，那么Eureka就认为客户端与注册中心出现了网络故障，此时会出现以下几种情况：   
 1. Eureka不再从注册列表中移除因为长时间没收到心跳而应该过期的服务   
@@ -213,7 +213,7 @@ Eureka看明白了这一点，因此在设计时就优先保证可用性。Eurek
 
 因此， Eureka可以很好的应对因网络故障导致部分节点失去联系的情况，而不会像zookeeper那样使整个注册服务瘫痪。
 
-## 5. 总结 {#5-总结}
+## 5. 总结 <a id="5-&#x603B;&#x7ED3;"></a>
 
 Eureka作为单纯的服务注册中心来说要比zookeeper更加“专业”，因为注册服务更重要的是可用性，我们可以接受短期内达不到一致性的状况。不过Eureka目前1.X版本的实现是基于servlet的java web应用，它的极限性能肯定会受到影响。期待正在开发之中的2.X版本能够从servlet中独立出来成为单独可部署执行的服务。  
 

@@ -1,6 +1,6 @@
 # 多线程面试问题
 
-{% embed data="{\"url\":\"https://mp.weixin.qq.com/s/e6NmfkvKdzCtOwJB5umrGA\",\"type\":\"link\",\"icon\":{\"type\":\"icon\",\"url\":\"https://res.wx.qq.com/mmbizwap/en\_US/htmledition/images/icon/common/favicon22c41c.ico\",\"aspectRatio\":0}}" %}
+{% embed url="https://mp.weixin.qq.com/s/e6NmfkvKdzCtOwJB5umrGA" %}
 
 **前言**
 

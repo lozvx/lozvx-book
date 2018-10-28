@@ -1,6 +1,6 @@
 # RateLimiter
 
-{% embed data="{\"url\":\"http://ifeve.com/guava-ratelimiter/\",\"type\":\"link\",\"title\":\"Guava官方文档-RateLimiter类 \| 并发编程网 – ifeve.com\",\"description\":\"让天下没有难学的技术\",\"icon\":{\"type\":\"icon\",\"url\":\"http://ifeve.com/favicon.ico\",\"aspectRatio\":0}}" %}
+{% embed url="http://ifeve.com/guava-ratelimiter/" %}
 
 RateLimiter 从概念上来讲，速率限制器会在可配置的速率下分配许可证。如果必要的话，每个acquire\(\) 会阻塞当前线程直到许可证可用后获取该许可证。一旦获取到许可证，不需要再释放许可证。
 

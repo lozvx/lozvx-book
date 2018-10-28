@@ -4,7 +4,7 @@
 
 [https://letsencrypt.org/getting-started/](https://letsencrypt.org/getting-started/)
 
-{% embed data="{\"url\":\"http://www.ruanyifeng.com/blog/2014/02/ssl\_tls.html\",\"type\":\"link\",\"title\":\"SSL/TLS协议运行机制的概述 - 阮一峰的网络日志\",\"icon\":{\"type\":\"icon\",\"url\":\"http://www.ruanyifeng.com/favicon.ico\",\"aspectRatio\":0}}" %}
+{% embed url="http://www.ruanyifeng.com/blog/2014/02/ssl\_tls.html" %}
 
 [http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html](http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html)
 

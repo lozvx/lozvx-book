@@ -1,6 +1,6 @@
 # Eureka vs Consul
 
-{% embed data="{\"url\":\"https://www.zhihu.com/question/55749122\",\"type\":\"link\",\"title\":\"spring cloud Eureka 服务的管理和spring cloud consul有什么区别？ - 知乎\",\"icon\":{\"type\":\"icon\",\"url\":\"https://static.zhihu.com/static/favicon.ico\",\"aspectRatio\":0}}" %}
+{% embed url="https://www.zhihu.com/question/55749122" %}
 
 最大的区别是Eureka保证AP, Consul为CP。
 

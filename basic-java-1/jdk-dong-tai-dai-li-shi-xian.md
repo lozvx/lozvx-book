@@ -1,6 +1,6 @@
 # JDK动态代理实现
 
-{% embed data="{\"url\":\"https://my.oschina.net/robinyao/blog/811193\",\"type\":\"link\",\"title\":\"JDK动态代理详解 - robin-yao的个人页面 - 开源中国\",\"description\":\"本文主要介绍JDK动态代理的基本原理，让大家更深刻的理解JDK Proxy,知其然知其所以然。明白JDK动态代理真正的原理及其生成的过程，我们以后写JDK Proxy可以不用去查demo，就可以徒手写个完美的Proxy。下面首先来个简单的Demo,后续的分析过程都依赖这个Demo去介绍，例子采用JDK1.8运行。 \#\#JDK Proxy HelloWorld \`\`\` pac...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://my.oschina.net/img/favicon.ico\",\"aspectRatio\":0}}" %}
+{% embed url="https://my.oschina.net/robinyao/blog/811193" %}
 
 
 
@@ -87,7 +87,7 @@ public class JDKProxyTest {
 
 运行上面的代码，这样一个简单的JDK Proxy就实现了。
 
-### 代理生成过程 {#h2_1}
+### 代理生成过程 <a id="h2_1"></a>
 
 我们之所以天天叫JDK动态代理，是因为这个代理class是由JDK在运行时动态帮我们生成。在解释代理生成过程前，我们先把-Dsun.misc.ProxyGenerator.saveGeneratedFiles=true 这个参数加入到JVM 启动参数中，它的作用是帮我们把JDK动态生成的proxy class 的字节码保存到硬盘中，帮助我们查看具体生成proxy的内容。我用的**Intellij IDEA ,代理class生成后直接放在项目的根目录**下的，以具体的包名为目录结构。
 

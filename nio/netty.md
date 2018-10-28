@@ -20,7 +20,7 @@ Netty 使用自建的 buffer API，而不是使用 NIO 的 [ByteBuffer](http://d
 
 
 
-### HTTP 实现 {#http-实现}
+### HTTP 实现 <a id="http-&#x5B9E;&#x73B0;"></a>
 
 HTTP无 疑是互联网上最受欢迎的协议，并且已经有了一些例如 Servlet 容器这样的 HTTP 实现。因此，为什么 Netty 还要在其核心模块之上构建一套 HTTP 实现？
 

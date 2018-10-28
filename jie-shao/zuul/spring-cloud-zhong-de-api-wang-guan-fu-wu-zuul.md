@@ -1,6 +1,6 @@
 # Spring Cloud中的API网关服务Zuul
 
-{% embed data="{\"url\":\"https://mp.weixin.qq.com/s/BWhh2HD0VVqzypxkBFU7eg\",\"type\":\"link\",\"icon\":{\"type\":\"icon\",\"url\":\"https://res.wx.qq.com/mmbizwap/zh\_CN/htmledition/images/icon/common/favicon22c41b.ico\",\"aspectRatio\":0}}" %}
+{% embed url="https://mp.weixin.qq.com/s/BWhh2HD0VVqzypxkBFU7eg" %}
 
 
 

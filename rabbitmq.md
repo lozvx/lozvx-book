@@ -1,6 +1,6 @@
 # RabbitMQ
 
-{% embed data="{\"url\":\"http://www.rabbitmq.com/getstarted.html\",\"type\":\"link\",\"title\":\"RabbitMQ - Getting started with RabbitMQ\"}" %}
+{% embed url="http://www.rabbitmq.com/getstarted.html" %}
 
 [https://blog.csdn.net/column/details/rabbitmq.html](https://blog.csdn.net/column/details/rabbitmq.html)
 

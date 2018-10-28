@@ -21,7 +21,7 @@
 
   本地方法栈属于线程私有的数据区域，这部分主要与虚拟机用到的 Native 方法相关，一般情况下，我们无需关心此区域。
 
-## volatile内存语义 {#volatile内存语义}
+## volatile内存语义 <a id="volatile&#x5185;&#x5B58;&#x8BED;&#x4E49;"></a>
 
 volatile在并发编程中很常见，但也容易被滥用，现在我们就进一步分析volatile关键字的语义。volatile是Java虚拟机提供的轻量级的同步机制。volatile关键字有如下两个作用
 

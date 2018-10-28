@@ -1,6 +1,6 @@
 # yaml vs properties
 
-{% embed data="{\"url\":\"https://meetsnehal.wordpress.com/2015/09/12/yaml-an-alternative-to-properties-file-with-spring-boot/\",\"type\":\"link\",\"title\":\"YAML an alternative to Properties file … with Spring Boot\",\"description\":\"From many years Java developers relies on properties file or xml files for specifying application configurations. In an enterprise application peoples have  creating separate files for each environ…\",\"icon\":{\"type\":\"icon\",\"url\":\"https://s1.wp.com/i/favicon.ico\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://meetsnehal.files.wordpress.com/2015/09/source-code-583537\_640.jpg\",\"width\":640,\"height\":362,\"aspectRatio\":0.565625}}" %}
+{% embed url="https://meetsnehal.wordpress.com/2015/09/12/yaml-an-alternative-to-properties-file-with-spring-boot/" %}
 
 
 

@@ -1,14 +1,14 @@
 # Java NIO 教程
 
-### Java NIO: Channels and Buffers {#ba20c0f0008c08cf086097e48e0c3d7c}
+### Java NIO: Channels and Buffers <a id="ba20c0f0008c08cf086097e48e0c3d7c"></a>
 
 标准的IO编程接口是面向字节流和字符流的。而NIO是面向**通道和缓冲区**的，数据总是从通道中读到buffer缓冲区内，或者从buffer写入到通道中。
 
-### Java NIO: Non-blocking IO {#80bfca892bff24a758076058048c17b1}
+### Java NIO: Non-blocking IO <a id="80bfca892bff24a758076058048c17b1"></a>
 
 Java NIO使我们可以进行非阻塞IO操作。比如说，单线程中从通道读取数据到buffer，同时可以继续做别的事情，当数据读取到buffer中后，线程再继续处理数据。写数据也是一样的。
 
-### Java NIO: Selectors {#d7e147e0d366f32ea9bf0348e89e51e9}
+### Java NIO: Selectors <a id="d7e147e0d366f32ea9bf0348e89e51e9"></a>
 
 NIO中有一个“selectors”的概念。selector可以检测多个通道的事件状态（例如：链接打开，数据到达）这样单线程就可以操作多个通道的数据。 所有这些都会在后续章节中更详细的介绍。
 
@@ -51,11 +51,11 @@ channel.read(bufferArray);
 ByteBuffer header = ByteBuffer.allocate(128);ByteBuffer body   = ByteBuffer.allocate(1024);//把数据写入各个缓冲区中ByteBuffer[] bufferArray = { header, body };channel.write(bufferArray);
 ```
 
-#### FileChannel {#filechannel}
+#### FileChannel <a id="filechannel"></a>
 
 Java NIO的`FileChannel`是连接到文件的通道，可以通过它读写文件。Java NIO的`FileChannel`可以替代标准的Java IO API来读写文件。
 
-#### SocketChannel {#socketchannel}
+#### SocketChannel <a id="socketchannel"></a>
 
 Java NIO `SocketChannel` 是连接到 **TCP** 网络套接字的一种通道。它其实就是Java NIO中的[标准Java网络Socket](http://docs.oracle.com/javase/8/docs/api/java/net/Socket.html)。有两种创建方法：
 

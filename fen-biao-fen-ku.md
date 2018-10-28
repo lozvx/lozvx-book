@@ -2,7 +2,7 @@
 
 Mycat：
 
-{% embed data="{\"url\":\"http://www.mycat.io/\",\"type\":\"link\",\"title\":\" \| MYCAT官方网站—中国第一开源分布式数据库中间件\"}" %}
+{% embed url="http://www.mycat.io/" %}
 
 数据库中间件，或者可以看做一个数据库代理。
 

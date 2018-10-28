@@ -1,6 +1,6 @@
 # Spring Cloud中声明式服务调用Feign
 
-{% embed data="{\"url\":\"https://mp.weixin.qq.com/s?\_\_biz=MzI1NDY0MTkzNQ==&mid=2247484040&idx=1&sn=aae350e6dc1a9f42882c9b316cf33390&scene=21\#wechat\_redirect\",\"type\":\"link\",\"icon\":{\"type\":\"icon\",\"url\":\"https://res.wx.qq.com/mmbizwap/en\_US/htmledition/images/icon/common/favicon22c41c.ico\",\"aspectRatio\":0}}" %}
+{% embed url="https://mp.weixin.qq.com/s?\_\_biz=MzI1NDY0MTkzNQ==&mid=2247484040&idx=1&sn=aae350e6dc1a9f42882c9b316cf33390&scene=21\#wechat\_redirect" %}
 
 前面几篇文章我们详细的介绍了Ribbon、RestTemplate、Hystrix组件，这些组件是我们Spring Cloud中非常基础的组件，小伙伴们在使用的过程中可能也发现了这些东西都是同时出现的，而且配置也都非常相似，每次开发都有很多相同的代码，因此，Spring Cloud基于Netflix Feign整合了Ribbon和Hystrix，让我们的开发工作变得更加简单，就像Spring Boot是对Spring+SpringMVC的简化一样。Spring Cloud Feign不仅在配置上大大简化了开发工作，同时还提供了一种声明式的Web服务客户端定义方式。  
 在前面几篇文章中，我们为了简化RestTemplate操作，将之封装在一个BookService中，但同时我们也发现BookService中的方法几乎都是模板式的，写起来很枯燥，Spring Cloud Feign对此进行了进一步的封装，简化了我们的封装操作。接下来我们就来看看Spring Cloud Feign的使用。
