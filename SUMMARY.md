@@ -222,5 +222,6 @@
     * [组合查询](elasticsearch/quan-wen-sou-suo/zu-he-cha-xun.md)
   * [多字段搜索](elasticsearch/duo-zi-duan-sou-suo.md)
   * [近似匹配](elasticsearch/jin-si-pi-pei.md)
-* [相关度](xiang-guan-du.md)
+  * [相关度](elasticsearch/xiang-guan-du.md)
+  * [分析器](elasticsearch/fen-xi-qi.md)
 
