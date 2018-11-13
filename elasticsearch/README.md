@@ -45,17 +45,6 @@ ES使用JSON作为文档的序列化格式。
 集群扩容时无缝整合新节点，重新分配分片以便从离群节点恢复  
   
   
-1.下载  
-https://www.elastic.co/downloads/elasticsearch  
-  
-2.运行  
-./bin/elasticsearch  
-  
-3.访问  
-curl 'http://localhost:9200/?pretty'  
-  
-4下载kibana  
-https://www.elastic.co/cn/downloads/kibana  
   
   
 文档   
