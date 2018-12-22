@@ -15,6 +15,7 @@
   * [macOS](linux-1/macos.md)
   * [Gradle](linux-1/gradle.md)
 * [Basic Java](basic-java-1/README.md)
+  * [Java8](basic-java-1/java8.md)
   * [基础知识](basic-java-1/ji-chu-zhi-shi.md)
   * [String](basic-java-1/string.md)
   * [final](basic-java-1/final.md)
