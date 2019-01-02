@@ -11,7 +11,7 @@ JVM的结构基本由4个部分组成
 
 JVM内存管理
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%286%29.png)
 
 Java8内存模型：
 

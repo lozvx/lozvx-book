@@ -211,6 +211,8 @@
 * [计算机网络](ji-suan-ji-wang-luo.md)
 * [MongoDB](mongodb.md)
 * [MySQL](mysql/README.md)
+  * [高性能MySQL](mysql/gao-xing-neng-mysql/README.md)
+    * [第一章 MySQL架构与历史](mysql/gao-xing-neng-mysql/di-yi-zhang-mysql-jia-gou-yu-li-shi.md)
   * [Mysql 查询性能优化](mysql/mysql-cha-xun-xing-neng-you-hua.md)
 * [Jmeter](jmeter.md)
 * [Java性能优化权威指南](java-xing-neng-you-hua-quan-wei-zhi-nan.md)
