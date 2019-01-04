@@ -1,6 +1,6 @@
 # 第一章 MySQL架构与历史
 
-MySQL服务器罗技架构图
+MySQL服务器逻辑架构图
 
 ![](../../.gitbook/assets/image%20%285%29.png)
 
