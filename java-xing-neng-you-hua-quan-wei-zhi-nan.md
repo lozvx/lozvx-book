@@ -10,7 +10,7 @@
 
 linux监控CPU使用率 : gnome-system-monitor
 
-![](.gitbook/assets/image%20%2822%29.png)
+![](.gitbook/assets/image%20%2825%29.png)
 
   
 
