@@ -42,7 +42,7 @@ public interface Runnable {
 
 JDK默认提供了一套函数式接口。在java.util.function包下。可以分成下面这么几类。
 
-![](../.gitbook/assets/image%20%2821%29.png)
+![](../.gitbook/assets/image%20%2823%29.png)
 
  函数式的准则是，被称为“函数式”的函数或方法都只能修改局部变量，除此之外，它引用的对象都应该是**final**的。  
 所有的引用类型字段都指向不可变对象。

@@ -2,7 +2,7 @@
 
 MySQL服务器逻辑架构图
 
-![](../../.gitbook/assets/image%20%285%29.png)
+![](../../.gitbook/assets/image%20%286%29.png)
 
 \*\*\*\*
 
